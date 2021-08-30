@@ -1,0 +1,17 @@
+[book]
+author = "indoorsnb、檩萘、獠牙"
+description = "格雷科技6(GT6)模组的中文指南"
+language = "zh"
+title = "格雷科技6u中文指南"
+
+[rust]
+edition = "2018"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[preprocessor.index]
+
+[preprocessor.links]
+renderers = ["html"]
