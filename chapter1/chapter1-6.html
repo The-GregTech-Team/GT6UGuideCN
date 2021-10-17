@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>基础熔炼 - 格雷科技6u中文指南</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="格雷科技6(GT6)模组的中文指南">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../favicon.svg">
+                        <link rel="shortcut icon" href="../favicon.png">
+                <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+                <link rel="stylesheet" href="../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 引言</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1.html"><strong aria-hidden="true">2.</strong> 初阶-了解世界</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter1/chapter1-12.html"><strong aria-hidden="true">2.1.</strong> 正确阅读 Tooltips</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-1.html"><strong aria-hidden="true">2.2.</strong> 格雷工具</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-2.html"><strong aria-hidden="true">2.3.</strong> 自然生成</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-3.html"><strong aria-hidden="true">2.4.</strong> 格雷地下避难所</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-5.html"><strong aria-hidden="true">2.5.</strong> 简易矿物处理</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-4.html"><strong aria-hidden="true">2.6.</strong> 单位</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-13.html"><strong aria-hidden="true">2.7.</strong> 手动机器</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-6.html" class="active"><strong aria-hidden="true">2.8.</strong> 基础熔炼</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-7.html"><strong aria-hidden="true">2.9.</strong> 点火工具</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-8.html"><strong aria-hidden="true">2.10.</strong> 多方块-焦炉</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-9.html"><strong aria-hidden="true">2.11.</strong> 化合物处理</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-10.html"><strong aria-hidden="true">2.12.</strong> 合金制作</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-14.html"><strong aria-hidden="true">2.13.</strong> GT-Forestry</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-11.html"><strong aria-hidden="true">2.14.</strong> GT式休闲</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter2/chapter2.html"><strong aria-hidden="true">3.</strong> 中阶-机器与自动化</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter2/chapter2-1.html"><strong aria-hidden="true">3.1.</strong> 产能设备简介</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-2.html"><strong aria-hidden="true">3.2.</strong> 机器简介</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-11.html"><strong aria-hidden="true">3.3.</strong> 特殊机器</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-12.html"><strong aria-hidden="true">3.4.</strong> 化学工业</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-13.html"><strong aria-hidden="true">3.5.</strong> 坩埚进阶</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-3.html"><strong aria-hidden="true">3.6.</strong> 面板筒介</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-5.html"><strong aria-hidden="true">3.7.</strong> 覆盖板简介</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-6.html"><strong aria-hidden="true">3.8.</strong> 生产线组合</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-7.html"><strong aria-hidden="true">3.9.</strong> 电力时代</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-8.html"><strong aria-hidden="true">3.10.</strong> 正确用电</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-9.html"><strong aria-hidden="true">3.11.</strong> 动态节能技术改造</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-10.html"><strong aria-hidden="true">3.12.</strong> 大型设备-蒸馏塔</a></li></ol></li><li class="chapter-item expanded "><a href="../addition/addition.html"><strong aria-hidden="true">4.</strong> 附录</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../addition/addition-1.html"><strong aria-hidden="true">4.1.</strong> 存储-流体</a></li><li class="chapter-item expanded "><a href="../addition/addition-2.html"><strong aria-hidden="true">4.2.</strong> 存储-物品</a></li><li class="chapter-item expanded "><a href="../addition/addition-3.html"><strong aria-hidden="true">4.3.</strong> 管道-流体</a></li><li class="chapter-item expanded "><a href="../addition/addition-4.html"><strong aria-hidden="true">4.4.</strong> 管道-物品</a></li><li class="chapter-item expanded "><a href="../addition/addition-5.html"><strong aria-hidden="true">4.5.</strong> 多方块-存储</a></li><li class="chapter-item expanded "><a href="../addition/addition-10.html"><strong aria-hidden="true">4.6.</strong> 岩层与矿物</a></li><li class="chapter-item expanded "><a href="../addition/addition-8.html"><strong aria-hidden="true">4.7.</strong> 矿物生成列表</a></li><li class="chapter-item expanded "><a href="../addition/addition-9.html"><strong aria-hidden="true">4.8.</strong> 坩埚周边熔点列表</a></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">格雷科技6u中文指南</h1>
+
+                    <div class="right-buttons">
+                                                <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="基础熔炼"><a class="header" href="#基础熔炼">基础熔炼</a></h1>
+<h2 id="死亡率20"><a class="header" href="#死亡率20">死亡率20%</a></h2>
+<p>格雷科技6加入了熔点和沸点，由于熔炉不科学且不能产生高温，所以它只能烧基础金属(铜,锡,铅,铋)。在制作坩埚后，你就可以用会爆炸的刺激工具——坩锅。一台穷酸型套瓷坩埚配合加热器和模具可以搞定大多数金属。</p>
+<h2 id="坩锅机制"><a class="header" href="#坩锅机制">坩锅机制</a></h2>
+<ul>
+<li>停止加温后开始降温</li>
+<li>加热器产热越高升温越快</li>
+<li>温度超过坩埚容许温度会爆炸（造成伤害）</li>
+<li>温度超过内部材料沸点材料会蒸发（造成伤害）</li>
+<li>通过活动扳手可以开启模具自动输入流体和红石控制设置</li>
+</ul>
+<h3 id="标准的坩埚熔炼装置"><a class="header" href="#标准的坩埚熔炼装置">标准的坩埚熔炼装置</a></h3>
+<h4 id="一个完善的坩埚熔炼装置必须具有以下组件"><a class="header" href="#一个完善的坩埚熔炼装置必须具有以下组件">一个完善的坩埚熔炼装置必须具有以下组件</a></h4>
+<ol>
+<li>
+<p>热源（加热器，各式燃烧室）</p>
+</li>
+<li>
+<p>坩埚（初期使用陶瓷坩埚，是一种十分划算的坩埚）</p>
+</li>
+</ol>
+<h5 id="额外组件"><a class="header" href="#额外组件">额外组件</a></h5>
+<ol>
+<li>浇铸口</li>
+<li>浇铸盆</li>
+<li>温度测量面板／手持式温度计</li>
+<li>模具</li>
+</ol>
+<h4 id="最基础的搭建方式"><a class="header" href="#最基础的搭建方式">最基础的搭建方式</a></h4>
+<ol>
+<li>做几个坩埚和几个模具（有你炸的）还有一个加热器</li>
+<li>放坩埚到地上</li>
+<li>热源放在除了上方外任意位置（至少一个，并且加热面对准坩埚）</li>
+<li>模具紧贴坩埚(必须水平)</li>
+<li>完成（开锅等炸？）</li>
+</ol>
+<h4 id="小技巧"><a class="header" href="#小技巧">小技巧</a></h4>
+<ul>
+<li>用方块堵住非电力／rf加热器可以使其停止加热。使用红石可以控制电力／rf加热器（似乎需要用扳手／活动扳手设置）。</li>
+<li>用水可以降低温度，但是会造成伤害（起码你不会爆炸了不是吗</li>
+<li>越少的东西加热越快越多的东西加热越慢</li>
+<li>坩埚可以容16unit的物质，但是如果一次投入一组，它也可以超容</li>
+<li>防化服可以避免炸的时候把你也人间蒸发。</li>
+<li>金属倒出并凝固后其实还是烫的，别作死</li>
+</ul>
+<h3 id="模具制作"><a class="header" href="#模具制作">模具制作</a></h3>
+<p>既然建好了坩埚，那么就应该来雕刻模具了，这些坑爹的模具最好和坩埚使用相同的材质（不然boomshakalaka）。雕刻使用凿子进行右键，手残的要小心，没法撤回。所有工具模具只能制作粗糙的工具，需要打磨。但是板和其他零件类不需要打磨。模具小耳朵可以设置模具自动输入，其他位置都是设置红石控制。<br />
+<code>X代表被凿过，O代表没被凿过. 1Unit=1个锭</code></p>
+<h4 id="锭1000units小块0250units板1000units"><a class="header" href="#锭1000units小块0250units板1000units">锭(1.000Units)|小块(0.250Units)|板(1.000Units)</a></h4>
+<pre><code class="language-text">  XXXOO        XXOOO        XXXXX
+  XXXOO        XXOOO        XXXXX
+  XXXOO        OOOOO        XXXXX
+  XXXOO        OOOOO        XXXXX
+  XXXOO        OOOOO        XXXXX
+</code></pre>
+<h4 id="小块板0111units螺栓0125units杆0500units"><a class="header" href="#小块板0111units螺栓0125units杆0500units">小块板(0.111Units)|螺栓(0.125Units)|杆(0.500Units)</a></h4>
+<pre><code class="language-text">  OOOOO        XXOOO        OOOOO
+  OXXXO        OOOOO        OOOOO
+  OXXXO        OOOOO        XXXXX
+  OXXXO        OOOOO        OOOOO
+  OOOOO        OOOOO        OOOOO
+</code></pre>
+<h4 id="万能铲1000units剑2000units锉1500"><a class="header" href="#万能铲1000units剑2000units锉1500">万能铲(1.000Units)|剑（2.000Units)|锉(1.500)</a></h4>
+<pre><code class="language-text">  OOXOO        OOXOO        OXXXO
+  OXXXO        OXXXO        OXXXO
+  OXXOO        OXXXO        OXXXO
+  OXXXO        OXXXO        OOXOO
+  OOOOO        OXXXO        OOXOO
+</code></pre>
+<h4 id="镐3000units锯2000units箭0250units"><a class="header" href="#镐3000units锯2000units箭0250units">镐(3.000Units)|锯(2.000Units)|箭(0.250Units)</a></h4>
+<pre><code class="language-text">  OOOOO        OOOOO        OOOOO
+  OXXXO        XXXXX        OOXOO
+  XOOOX        XXXXX        OOXOO
+  OOOOO        OOOOO        OXXXO
+  OOOOO        OOOOO        OOOOO
+</code></pre>
+<h4 id="齿轮4000units小型齿轮1000units凿子1500units"><a class="header" href="#齿轮4000units小型齿轮1000units凿子1500units">齿轮(4.000Units)|小型齿轮(1.000Units)|凿子(1.500Units)</a></h4>
+<pre><code class="language-text">  XOXOX        OXOXO        OXXXO
+  OXXXO        XXXXX        OOXOO
+  XXOXX        OXOXO        OOXOO
+  OXXXO        XXXXX        OOXOO
+  XOXOX        OXOXO        OOXOO
+</code></pre>
+<h4 id="环0250units斧3000units长杆1000units"><a class="header" href="#环0250units斧3000units长杆1000units">环(0.250Units)|斧(3.000Units)|长杆(1.000Units)</a></h4>
+<pre><code class="language-text">  OOOOO        OOOOO        XOOOO
+  OXXXO        OXXXO        OXOOO
+  OXOXO        OXXXO        OOXOO
+  OXXXO        OXOOO        OOOXO
+  OOOOO        OOOOO        OOOOX
+</code></pre>
+<h4 id="铲1000units锤6000units犁6000units"><a class="header" href="#铲1000units锤6000units犁6000units">铲(1.000Units)|锤(6.000Units)|犁(6.000Units)</a></h4>
+<pre><code class="language-text">  OOXOO        XXXOO        XXXXX
+  OXXXO        XXXOO        XXXXX
+  OXXXO        XOXOO        XXXXX
+  OXXXO        XXXOO        XXXXX
+  OOOOO        XXXOO        OOXOO
+</code></pre>
+<h4 id="外壳0500units螺丝刀0500units锄2000units"><a class="header" href="#外壳0500units螺丝刀0500units锄2000units">外壳(0.500Units)|螺丝刀(0.500Units)|锄(2.000Units)</a></h4>
+<pre><code class="language-text">  XXXOX        OOOOO        OOOOO
+  XXXOX        OOXOO        OOXXO
+  XXXOX        OOXOO        OXXXO
+  OOOOX        OOXOO        OOOOO
+  XXXOO        OOXOO        OOOOO
+</code></pre>
+<h4 id="镰刀3000units双刃斧5000units"><a class="header" href="#镰刀3000units双刃斧5000units">镰刀(3.000Units)|双刃斧(5.000Units)</a></h4>
+<pre><code class="language-text">  OOOOO        OOOOO
+  OXXXX        XXXXX
+  XXXXX        XXXXX
+  OOOOO        XOOOX
+  OOOOO        OOOOO
+</code></pre>
+<p>PS:金属坩埚要扳手，陶瓷扳手要凿子<br />
+PPS:模具需要用凿子来雕刻<br />
+PPPS:自动化在后面<br />
+PPPPS:模具的被雕刻位置可以平移</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../chapter1/chapter1-13.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../chapter1/chapter1-7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../chapter1/chapter1-13.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../chapter1/chapter1-7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>

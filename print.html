@@ -1,0 +1,1082 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>格雷科技6u中文指南</title>
+                <meta name="robots" content="noindex" />
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="格雷科技6(GT6)模组的中文指南">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="favicon.svg">
+                        <link rel="shortcut icon" href="favicon.png">
+                <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+                <link rel="stylesheet" href="css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 引言</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1.html"><strong aria-hidden="true">2.</strong> 初阶-了解世界</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter1/chapter1-12.html"><strong aria-hidden="true">2.1.</strong> 正确阅读 Tooltips</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1-1.html"><strong aria-hidden="true">2.2.</strong> 格雷工具</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1-2.html"><strong aria-hidden="true">2.3.</strong> 自然生成</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1-3.html"><strong aria-hidden="true">2.4.</strong> 格雷地下避难所</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1-5.html"><strong aria-hidden="true">2.5.</strong> 简易矿物处理</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1-4.html"><strong aria-hidden="true">2.6.</strong> 单位</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1-13.html"><strong aria-hidden="true">2.7.</strong> 手动机器</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1-6.html"><strong aria-hidden="true">2.8.</strong> 基础熔炼</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1-7.html"><strong aria-hidden="true">2.9.</strong> 点火工具</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1-8.html"><strong aria-hidden="true">2.10.</strong> 多方块-焦炉</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1-9.html"><strong aria-hidden="true">2.11.</strong> 化合物处理</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1-10.html"><strong aria-hidden="true">2.12.</strong> 合金制作</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1-14.html"><strong aria-hidden="true">2.13.</strong> GT-Forestry</a></li><li class="chapter-item expanded "><a href="chapter1/chapter1-11.html"><strong aria-hidden="true">2.14.</strong> GT式休闲</a></li></ol></li><li class="chapter-item expanded "><a href="chapter2/chapter2.html"><strong aria-hidden="true">3.</strong> 中阶-机器与自动化</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter2/chapter2-1.html"><strong aria-hidden="true">3.1.</strong> 产能设备简介</a></li><li class="chapter-item expanded "><a href="chapter2/chapter2-2.html"><strong aria-hidden="true">3.2.</strong> 机器简介</a></li><li class="chapter-item expanded "><a href="chapter2/chapter2-11.html"><strong aria-hidden="true">3.3.</strong> 特殊机器</a></li><li class="chapter-item expanded "><a href="chapter2/chapter2-12.html"><strong aria-hidden="true">3.4.</strong> 化学工业</a></li><li class="chapter-item expanded "><a href="chapter2/chapter2-13.html"><strong aria-hidden="true">3.5.</strong> 坩埚进阶</a></li><li class="chapter-item expanded "><a href="chapter2/chapter2-3.html"><strong aria-hidden="true">3.6.</strong> 面板筒介</a></li><li class="chapter-item expanded "><a href="chapter2/chapter2-5.html"><strong aria-hidden="true">3.7.</strong> 覆盖板简介</a></li><li class="chapter-item expanded "><a href="chapter2/chapter2-6.html"><strong aria-hidden="true">3.8.</strong> 生产线组合</a></li><li class="chapter-item expanded "><a href="chapter2/chapter2-7.html"><strong aria-hidden="true">3.9.</strong> 电力时代</a></li><li class="chapter-item expanded "><a href="chapter2/chapter2-8.html"><strong aria-hidden="true">3.10.</strong> 正确用电</a></li><li class="chapter-item expanded "><a href="chapter2/chapter2-9.html"><strong aria-hidden="true">3.11.</strong> 动态节能技术改造</a></li><li class="chapter-item expanded "><a href="chapter2/chapter2-10.html"><strong aria-hidden="true">3.12.</strong> 大型设备-蒸馏塔</a></li></ol></li><li class="chapter-item expanded "><a href="addition/addition.html"><strong aria-hidden="true">4.</strong> 附录</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="addition/addition-1.html"><strong aria-hidden="true">4.1.</strong> 存储-流体</a></li><li class="chapter-item expanded "><a href="addition/addition-2.html"><strong aria-hidden="true">4.2.</strong> 存储-物品</a></li><li class="chapter-item expanded "><a href="addition/addition-3.html"><strong aria-hidden="true">4.3.</strong> 管道-流体</a></li><li class="chapter-item expanded "><a href="addition/addition-4.html"><strong aria-hidden="true">4.4.</strong> 管道-物品</a></li><li class="chapter-item expanded "><a href="addition/addition-5.html"><strong aria-hidden="true">4.5.</strong> 多方块-存储</a></li><li class="chapter-item expanded "><a href="addition/addition-10.html"><strong aria-hidden="true">4.6.</strong> 岩层与矿物</a></li><li class="chapter-item expanded "><a href="addition/addition-8.html"><strong aria-hidden="true">4.7.</strong> 矿物生成列表</a></li><li class="chapter-item expanded "><a href="addition/addition-9.html"><strong aria-hidden="true">4.8.</strong> 坩埚周边熔点列表</a></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">格雷科技6u中文指南</h1>
+
+                    <div class="right-buttons">
+                                                <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="格雷科技6u中文指南简介"><a class="header" href="#格雷科技6u中文指南简介">格雷科技6u中文指南简介</a></h1>
+<p>格雷科技6（Gregtech6）是Gregorius Techneticies 制作的格雷科技mod 第六版。它新增了大量的方块，一系列的工具，各种能源单位与一种特殊地牢（应当叫为GT避难所更为合适），并且更改了矿物生成方式和部分mod的合成。</p>
+<p>本指南将会介绍其中的机器，工具，生成，能源的使用方法，机器自动化的技巧，和与其他mod的联动方式。大部分合成将不会出现指南中，如有疑问请在github提出，具体合成自行查询NEI。如果gregtech6有内容上的更新，部分内容可能会过时。</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a></p>
+<p><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GregTech6中文指南</span> 由 indoorsnb、檩萘和獠牙创作，采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。</p>
+<p>基于<a href="http://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=673246&amp;page=1#pid11508297">http://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=673246&amp;page=1#pid11508297</a>上的作品创作。</p>
+<h2 id="警告"><a class="header" href="#警告">警告!⚠️</a></h2>
+<p>很多教程依靠本人记忆制作，靠谱程度只能靠玄学</p>
+<p>过一段时间再来做-6月8日 最近挺忙的</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="初阶-了解世界"><a class="header" href="#初阶-了解世界">初阶-了解世界</a></h1>
+<p><strong>来自土人的哀嚎？</strong></p>
+<h2 id="简介"><a class="header" href="#简介">简介</a></h2>
+<p>本章节讲述了GT新增工具，对其他装备和工具的修改，矿物生成，地下避难所寻宝，能源单位与其中级别，坩埚正确搭建与化合物／合金熔炼，和GT的杂交水果等休闲食品／物品。</p>
+<h2 id="科技树"><a class="header" href="#科技树">科技树</a></h2>
+<p><img src="chapter1//assets/IMG_0411.PNG" alt="" /></p>
+<h2 id="小技巧"><a class="header" href="#小技巧">小技巧</a></h2>
+<p>用F3+H在MC中开启查看熔点以及物质含量（妈妈再也不用担心我智障啦）</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="正确阅读-tooltips"><a class="header" href="#正确阅读-tooltips">正确阅读 Tooltips</a></h1>
+<h2 id="眼瞎真的不怪人"><a class="header" href="#眼瞎真的不怪人">眼瞎真的不怪人</a></h2>
+<p>如果你已经仔仔细细看了GT6，你会发现一堆又一堆的tooltips（配合F3+H食用更佳）。在GT5中没有这个黑科技，你可以通过tooltips简单的了解机器/工具/材料的属性等信息。</p>
+<p>GT6中的tooltips通过颜色来区别，不同颜色意味着不同类型的tooltip。</p>
+<table><thead><tr><th align="left">颜色</th><th align="left">意义</th></tr></thead><tbody>
+<tr><td align="left">红色</td><td align="left">警告</td></tr>
+<tr><td align="left">灰色</td><td align="left">可以用工具进行的操作</td></tr>
+<tr><td align="left">黄色+白色</td><td align="left">效率</td></tr>
+<tr><td align="left">青色+白色</td><td align="left">可用配方</td></tr>
+<tr><td align="left">绿色+白色</td><td align="left">输入</td></tr>
+<tr><td align="left">红色+白色</td><td align="left">输出</td></tr>
+<tr><td align="left">白色+橙色</td><td align="left">爆炸抗性</td></tr>
+<tr><td align="left">橙色</td><td align="left">注意事项</td></tr>
+<tr><td align="left">紫色</td><td align="left">自带特殊效果</td></tr>
+<tr><td align="left">蓝色</td><td align="left">材料由来</td></tr>
+<tr><td align="left">灰白色</td><td align="left">构成材料／矿物辞典</td></tr>
+<tr><td align="left">青色</td><td align="left">线缆性能／特性</td></tr>
+<tr><td align="left">灰色+橙色</td><td align="left">用啥来挖</td></tr>
+<tr><td align="left">灰色+灰白色</td><td align="left">工具用途</td></tr>
+<tr><td align="left">白色+黄色</td><td align="left">级别／制作材料</td></tr>
+<tr><td align="left">白色+蓝色</td><td align="left">伤害</td></tr>
+<tr><td align="left">白色+紫色</td><td align="left">速度</td></tr>
+<tr><td align="left">白色+绿色</td><td align="left">耐久／使用次数</td></tr>
+</tbody></table>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="格雷工具"><a class="header" href="#格雷工具">格雷工具</a></h1>
+<h2 id="gt-作者的福利"><a class="header" href="#gt-作者的福利">GT 作者的福利</a></h2>
+<p>GT6 的工具大体与 GT5 相同，但是对原版进行了一些修改并且使得其他 Mod 工具需要使用 GT 的合成方式合成（小幅度造价提高）GT6 自带一些普通工具，电动工具，以及万能工具。这些工具对于制造 GT 机器等必不可少。格雷工具也可以使用坩埚模具制造，但是需要通过打磨，不通过打磨的工具耐久极低。</p>
+<h3 id="对原版和其他-mod-的修改"><a class="header" href="#对原版和其他-mod-的修改">对原版和其他 mod 的修改</a></h3>
+<ul>
+<li>部分工具合成变为和格雷科技工具类似</li>
+<li>全部 Minecraft 原版工具耐久变为极低，百试不爽的石头镐子和钻石镐子都跪了</li>
+</ul>
+<h3 id="和格雷科技-5-的不同之处"><a class="header" href="#和格雷科技-5-的不同之处">和格雷科技 5 的不同之处</a></h3>
+<ul>
+<li>加入了工具“万能工具“，“活动扳手“，”建筑镐“等&quot;</li>
+<li>更改扳手等的合成表</li>
+<li>扳手功能变少（部分功能需要活动扳手）</li>
+<li>工具的挖掘等级关乎到很多东西，级别太低你机器都挖不动</li>
+</ul>
+<h3 id="如何正确了解工具的特性"><a class="header" href="#如何正确了解工具的特性">如何正确了解工具的特性</a></h3>
+<p>工具的 tooltips 内描述了它的功能（部分），耐久，自带附魔，等级，挖掘速度，剩余合成次数（合成和挖掘消耗耐久不同）还有伤害。如何正确了解特性很重要（不然你做一把辐射附魔工具拿去玩儿搞毛）</p>
+<h3 id="工具列表"><a class="header" href="#工具列表">工具列表</a></h3>
+<p><img src="chapter1//assets/%E5%B7%A5%E5%85%B7%E5%88%97%E8%A1%A8.png" alt="工具列表" /></p>
+<table><thead><tr><th align="left">序号</th><th align="center">名称</th><th align="center">基础伤害</th><th align="center">基础挖掘速度</th><th align="center">特性</th></tr></thead><tbody>
+<tr><td align="left">1</td><td align="center">屠刀</td><td align="center">1.00</td><td align="center">0.10</td><td align="center">自带抢夺 I，每 2 个等级获得额外抢夺+1，攻击慢</td></tr>
+<tr><td align="left">2</td><td align="center">剑</td><td align="center">4.00</td><td align="center">1.00</td><td align="center">没啥特性</td></tr>
+<tr><td align="left">3</td><td align="center">镐</td><td align="center">1.50</td><td align="center">1.00</td><td align="center">没啥特性</td></tr>
+<tr><td align="left">4</td><td align="center">铲</td><td align="center">1.50</td><td align="center">1.00</td><td align="center">没啥特性</td></tr>
+<tr><td align="left">5</td><td align="center">斧</td><td align="center">3.00</td><td align="center">1.00</td><td align="center">一次砍倒一棵树，不过消耗的耐久也很多</td></tr>
+<tr><td align="left">6</td><td align="center">锄</td><td align="center">1.75</td><td align="center">1.00</td><td align="center">没啥特性</td></tr>
+<tr><td align="left">7</td><td align="center">锯</td><td align="center">1.75</td><td align="center">1.00</td><td align="center">可以砍树，锯冰块</td></tr>
+<tr><td align="left">8</td><td align="center">锤子</td><td align="center">3.00</td><td align="center">0.75</td><td align="center">可以敲碎矿物，探矿</td></tr>
+<tr><td align="left">9</td><td align="center">软锤</td><td align="center">3.00</td><td align="center">0.1</td><td align="center">用来砸机器，可以治好一些机器故障，还可以用来修改一些机器设置</td></tr>
+<tr><td align="left">10</td><td align="center">扳手</td><td align="center">3.00</td><td align="center">1.00</td><td align="center">对机器/管道会出现网格，可以调整朝向/管道连接</td></tr>
+<tr><td align="left">11</td><td align="center">锉刀</td><td align="center">1.50</td><td align="center">1.00</td><td align="center">有一个叫做 TP 的家伙告诉我它可以反坦克（雾）</td></tr>
+<tr><td align="left">12</td><td align="center">撬棍</td><td align="center">2.00</td><td align="center">1.00</td><td align="center">可以快速挖掘板条箱／右键拆开板条箱，拆卸覆盖版，它是一把物理学圣剑</td></tr>
+<tr><td align="left">13</td><td align="center">螺丝刀</td><td align="center">1.50</td><td align="center">1.00</td><td align="center">可以修改面板的设置，也可以塞到不明部位</td></tr>
+<tr><td align="left">14</td><td align="center">研钵</td><td align="center">2.00</td><td align="center">1.00</td><td align="center">用来粉碎东西（目前版本已删除手持研体，改为类似榨汁机的工作台形式，无限耐久，工作消耗体力）</td></tr>
+<tr><td align="left">15</td><td align="center">剪线钳</td><td align="center">1.25</td><td align="center">1.00</td><td align="center">剥除电线表面的橡胶，调整电线连接（类似扳手）</td></tr>
+<tr><td align="left">16</td><td align="center">捕虫网</td><td align="center">1.00</td><td align="center">1.00</td><td align="center">和林业的一个用途</td></tr>
+<tr><td align="left">17</td><td align="center">修枝剪</td><td align="center">2.50</td><td align="center">0.25</td><td align="center">原版和 GT 的树使用它可以每个叶子获得一个树苗</td></tr>
+<tr><td align="left">18</td><td align="center">万能铲</td><td align="center">3.00</td><td align="center">0.75</td><td align="center">WJQ-308 型多功能军铲 具有铲子，小刀，撬棍和锯子的功能</td></tr>
+<tr><td align="left">19</td><td align="center">镰刀</td><td align="center">3.00</td><td align="center">1.00</td><td align="center">快速收割</td></tr>
+<tr><td align="left">20</td><td align="center">犁</td><td align="center">1.00</td><td align="center">1.00</td><td align="center">铲雪</td></tr>
+<tr><td align="left">21</td><td align="center">皮搋子</td><td align="center">1.25</td><td align="center">1.00</td><td align="center">可以清除管道堵塞</td></tr>
+<tr><td align="left">22</td><td align="center">擀面杖</td><td align="center">2.00</td><td align="center">1.00</td><td align="center">没啥特性</td></tr>
+<tr><td align="left">23</td><td align="center">凿子</td><td align="center">1.50</td><td align="center">1.00</td><td align="center">右键雕刻模具或者切换石头/覆盖板的花纹</td></tr>
+<tr><td align="left">24</td><td align="center">打火石</td><td align="center">1.00</td><td align="center">1.00</td><td align="center">点火</td></tr>
+<tr><td align="left">25</td><td align="center">活动扳手</td><td align="center">3.00</td><td align="center">1.00</td><td align="center">修改机器设置（例如自动输出），左键功能与扳手相同</td></tr>
+<tr><td align="left">26</td><td align="center">弯曲绕桶</td><td align="center">2.00</td><td align="center">1.00</td><td align="center">没啥特性</td></tr>
+<tr><td align="left">27</td><td align="center">小型弯曲绕桶</td><td align="center">1.50</td><td align="center">1.00</td><td align="center">没啥特性</td></tr>
+<tr><td align="left">28</td><td align="center">双刃斧</td><td align="center">6.00</td><td align="center">1.00</td><td align="center">砍树的时候会把上方木头全部砍掉（越高时间越长）</td></tr>
+<tr><td align="left">29</td><td align="center">建筑镐</td><td align="center">1.50</td><td align="center">2.00</td><td align="center">挖掘建筑砖块比较快</td></tr>
+<tr><td align="left">30</td><td align="center">放大镜</td><td align="center">1.00</td><td align="center">1.00</td><td align="center">据了解可以看到一些有趣的东西</td></tr>
+<tr><td align="left">31</td><td align="center">剪刀</td><td align="center">1.00</td><td align="center">1.00</td><td align="center">一把剪刀，可以用来剪掉某种部位</td></tr>
+<tr><td align="left">32</td><td align="center">钳子</td><td align="center">2.00</td><td align="center">1.00</td><td align="center">毫发无伤的从模具里取出金属</td></tr>
+<tr><td align="left">33</td><td align="center">电钻</td><td align="center">2.00~3.00</td><td align="center">3.00~9.00</td><td align="center">等于镐，但是需要充电还会坏</td></tr>
+<tr><td align="left">34</td><td align="center">电锯</td><td align="center">3.00~4.00</td><td align="center">2.00~4.00</td><td align="center">等于斧，但是还是要充电+会坏</td></tr>
+<tr><td align="left">35</td><td align="center">电动扳手</td><td align="center">1.00~2.00</td><td align="center">2.00~4.00</td><td align="center">就是一把充电扳手辣（还会坏）</td></tr>
+<tr><td align="left">36</td><td align="center">气锤</td><td align="center">3.00</td><td align="center">12.00</td><td align="center">挖石头巨快，但是还得充电+会坏</td></tr>
+<tr><td align="left">37</td><td align="center">圆锯</td><td align="center">1.00</td><td align="center">1.00</td><td align="center">就是一把充电+会坏的锯子</td></tr>
+<tr><td align="left">38</td><td align="center">螺丝刀</td><td align="center">1.50</td><td align="center">1.00</td><td align="center">更改面板的设置，可以塞入不明部位</td></tr>
+<tr><td align="left">39</td><td align="center">手钻</td><td align="center">1.50</td><td align="center">1.00</td><td align="center">右键放火把</td></tr>
+<tr><td align="left">40</td><td align="center">搅拌器</td><td align="center">1.50</td><td align="center">1.00</td><td align="center">哈</td></tr>
+<tr><td align="left">41</td><td align="center">万能工具</td><td align="center">0.00~2.00</td><td align="center">0.50~1.00</td><td align="center">和名字一样</td></tr>
+<tr><td align="left">42</td><td align="center">刀</td><td align="center">2.00</td><td align="center">0.50</td><td align="center">可以砍人或者做菜，一般喜欢先砍人再做菜</td></tr>
+</tbody></table>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="自然生成"><a class="header" href="#自然生成">自然生成</a></h1>
+<h2 id="一如既往的玄学"><a class="header" href="#一如既往的玄学">一如既往的玄学</a></h2>
+<p>gt6不只是生成矿物，还生成了一堆各种奇葩的东西。比如说树啊，GT避难所啊什么的。</p>
+<h2 id="岩层生成"><a class="header" href="#岩层生成">岩层生成</a></h2>
+<p><img src="chapter1//assets/%E5%B2%A9%E5%B1%82.png" alt="岩层" /></p>
+<p>gt6在6.07以后主世界采用了更加神秘的岩层机制！岩层一览如下</p>
+<ul>
+<li>红色/黑色花岗岩:硬度最高，同时具有抗爆性能</li>
+<li>玄武岩:硬度比石头高</li>
+<li>大理石:和石头一样硬度</li>
+<li>石灰石:碳酸钙什么的</li>
+<li>蓝/绿片岩:花花绿绿的东西</li>
+<li>花岗岩(白)/闪长岩/安山岩:它们穿越时空，从遥远的1.8版本到来</li>
+<li>金伯利岩:听名字就知道产钻石</li>
+<li>石英岩:不多说，产石英，包括AE的</li>
+</ul>
+<p>岩层中会随机生成一点矿物，矿物有以下三种生成：</p>
+<ul>
+<li>在岩层中生成，基本上都是这样</li>
+<li>在两种岩层的夹缝生成，例如青金石、方钠石等在黑色花岗岩跟大理石的夹缝处有生成</li>
+</ul>
+<p><img src="chapter1//assets/%E5%A4%B9%E7%BC%9D%E7%9F%BF%E7%89%A9.png" alt="夹缝矿物" /></p>
+<ul>
+<li>作为一个单独的岩层生成，例如无烟煤（就是煤炭）、褐煤、油母页岩、铝土矿以及盐和石盐</li>
+</ul>
+<p><img src="chapter1//assets/%E7%85%A4%E7%9F%BF%E5%B1%82.png" alt="煤矿层" /></p>
+<h3 id="详细数据参见附录-a-hrefchapter1additionaddition-10html岩层与矿物a"><a class="header" href="#详细数据参见附录-a-hrefchapter1additionaddition-10html岩层与矿物a">详细数据参见附录 <a href="chapter1//addition/addition-10.html">岩层与矿物</a></a></h3>
+<p>谁也不知道到底还有没有矿脉这种概念。总之你可以通过捡起地上的石头来查询这条y轴上到底有点啥</p>
+<h2 id="矿物生成注意gt607以后版本仅适用于非主世界维度"><a class="header" href="#矿物生成注意gt607以后版本仅适用于非主世界维度">矿物生成（<strong>注意！GT6.07以后版本仅适用于非主世界维度</strong>）</a></h2>
+<p>格雷科技6加入了矿脉形式的矿物生成，与GT作者前作格雷科技5不同的是格雷科技6的矿脉生成算法变化，它具有以下</p>
+<h3 id="特性"><a class="header" href="#特性">特性</a></h3>
+<ul>
+<li>大小不固定</li>
+<li>密集度不固定</li>
+<li>矿脉可以和其他矿脉交叉混合</li>
+<li>当安装了其他mod并且重新生成gregtech6全部配置文件后，它可能生成一些其他mod的矿石，例如三钛或rockhounding里大量的各类宝石。这也带来了一些问题（比如说有些加入了太多矿导致部分重要矿物很难找到）</li>
+<li>不同地形具有不同的矿脉生成，比如说海底多铀。
+每个矿脉具有2-4种矿物（尚不明确）矿物多为化合类矿产，需要格雷科技的机械设备和坩埚进行处理。</li>
+<li>不同地形／世界具有不同的贫瘠矿物</li>
+</ul>
+<h3 id="矿脉生成列表请见附录第八篇-a-hrefchapter1additionaddition-8html矿物生成列表a"><a class="header" href="#矿脉生成列表请见附录第八篇-a-hrefchapter1additionaddition-8html矿物生成列表a">矿脉生成列表请见附录第八篇 <a href="chapter1/addition/addition-8.html">矿物生成列表</a></a></h3>
+<h4 id="沙漠中地表矿脉图"><a class="header" href="#沙漠中地表矿脉图">沙漠中地表矿脉图</a></h4>
+<p>我们来看看地表矿物等生成，这张处理过的图的高度为64(地表)不能显示地下有没有矿。<br />
+<img src="chapter1//assets/%E7%9F%BF%E8%84%89%E9%AB%98%E6%B8%85.png" alt="矿脉" /><br />
+由此可见GT6矿脉生成大小等都发生了变化，3x3挖矿法不好用了呢。</p>
+<p>獠牙：~~谁说的不好用了，照样用啊，是你脑图像处理能力不行吧!~~让我来带大家看看怎么找矿脉基点（简单方式）。</p>
+<p><img src="chapter1//assets/%E5%AF%BB%E6%89%BE%E7%9F%BF%E8%84%89-1.png" alt="寻找矿脉" /></p>
+<p>首先我们看到这里，明显的有三大矿脉对吧，而且由于GT6中矿脉密集度不固定且可以和其他矿脉交叉混合，所以出现了这里混杂不好确定基点的情况：红色方框的矿脉把其他两种矿脉的位置给侵占了，但是我们处理下会发现其实还是很简单的。</p>
+<p><img src="chapter1//assets/%E5%AF%BB%E6%89%BE%E7%9F%BF%E8%84%89-2.png" alt="寻找矿脉" /></p>
+<p>我们要做的事把矿脉的蔓延部分，重合部分以及不足部分去除或补全，这样一来矿脉中心点便可清楚地显示出来了（图中用点标识出的区块）。</p>
+<p>下面我们来看看复杂一点的地方,比如这里：</p>
+<p><img src="chapter1//assets/%E5%AF%BB%E6%89%BE%E7%9F%BF%E8%84%89-4.png" alt="寻找矿脉" /></p>
+<p>由此可见：找矿脉还是可以用3*3大法，但是矿脉的清场方式变得有点困难了，首先矿脉的边缘密度降低，边界之外仍然能有生成，边界之内也有可能不生成，所以建议随心处理，把看到的挖光就行了，边上密度小懒得挖也是可以的。</p>
+<h2 id="基岩矿脉"><a class="header" href="#基岩矿脉">基岩矿脉</a></h2>
+<p><del>作者良心发现，终于弄出来了好找的一种矿物生成方式</del></p>
+<p>这种矿脉贴近基岩生成。如果地表是沙子、泥土、草地之类的话就会刷出一些gt6特有的花来指示基岩矿脉。基岩矿脉是两个底面一正一反扣在一起的四楞台。最底层中心会有基岩矿生成。基岩矿不能挖掘，但可以用基岩钻头通过消耗大量物资从里面无限制造矿。</p>
+<h2 id="石油生成"><a class="header" href="#石油生成">石油生成</a></h2>
+<p>石油在gt6以水池的方式生成在靠近基岩的地方。大家可以通过<a href="http://www.mcmod.cn/post/517.html">这里</a>介绍的螺旋挖矿法来找到它。如果石油池子的生成涉及到基岩，还会生成油泉。油泉不可挖掘，每过一段时间就会在正上方生成一个液体方块。</p>
+<p>另外还会通过同样方式生成岩浆和水的池子，同样可能生成对应的岩浆泉/水泉。</p>
+<h2 id="地牢生成"><a class="header" href="#地牢生成">地牢生成</a></h2>
+<p>除了gt矿物生成外，GT6还添加了其他的生成。分别为枫树和橡胶树(GT)，格雷地下避难所，海水，地牢箱子生成。</p>
+<h2 id="树木生成"><a class="header" href="#树木生成">树木生成</a></h2>
+<p>现在GT6生成的树有六种：橡胶树，枫树（枫树mod表示不服），榛树，彩虹树（基佬树），柳树，高红槿。 因为我比较懒所以懒得去一个个找出来图了，反正就是一堆奇葩的树就对了。<br />
+<del>根据不明消息，GT6的树木生成方式似乎利用了地牢生成方式</del></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="格雷地下避难所"><a class="header" href="#格雷地下避难所">格雷地下避难所</a></h1>
+<h2 id="不会刷怪的地牢和大量的资源"><a class="header" href="#不会刷怪的地牢和大量的资源">不会刷怪的地牢和大量的资源</a></h2>
+<p>GT6难度很高，但是也多了不少福利。格雷地下避难所是一类福利地牢，地表／地图上看起来是一GT砖块组成的约为一个区块大小的方块，内部深度可以有50～100m，中间有一个天井可以用飞行背包什么的快速进出，一个很长很长的楼梯环绕天井，一般情况下避难所内部高度为25左右。内部没有任何刷怪笼／怪物，有大量的物资和有几率出现的末地门（几率极低）。全部内部方块自带反刷怪，是一个十分给力的安全住所。如果初期找到格雷地下避难所，可以直接住下。一般情况下格雷地下避难所至少有1个房间，多个房间之间由一个通道隔开。天花板上的灯并不能提供足够亮度，因此放了会刷怪的方块时小心刷出点奇怪的生物。</p>
+<h2 id="地表结构"><a class="header" href="#地表结构">地表结构</a></h2>
+<p><img src="chapter1//assets/%E5%9C%B0%E7%89%A2.png" alt="" /></p>
+<h3 id="内部房间列表"><a class="header" href="#内部房间列表">内部房间列表</a></h3>
+<ul>
+<li>工作区</li>
+</ul>
+<p><img src="chapter1//assets/%E5%B7%A5%E4%BD%9C%E5%8C%BA.png" alt="" /></p>
+<ul>
+<li>集体宿舍</li>
+</ul>
+<p>宿舍里保险柜的钥匙藏在书架上，注意书架是两面的，挖开墙看看书架背后，钥匙基本上在那里。</p>
+<p>在工作区里大型储物箱上的书架里也可能有钥匙。</p>
+<p><img src="chapter1//assets/%E9%9B%86%E4%BD%93%E5%AE%BF%E8%88%8D.png" alt="" /></p>
+<ul>
+<li>
+<p>封闭储藏室</p>
+</li>
+<li>
+<p>末地传送门</p>
+</li>
+<li>
+<p>地狱传送门</p>
+</li>
+</ul>
+<p><img src="chapter1//assets/%E5%9C%B0%E7%8B%B1%E9%97%A8.png" alt="" /></p>
+<ul>
+<li>
+<p>开放储藏室</p>
+</li>
+<li>
+<p>书房</p>
+</li>
+</ul>
+<p><img src="chapter1//assets/%E4%B9%A6%E6%88%BF.png" alt="" /></p>
+<ul>
+<li>过道箱子</li>
+</ul>
+<p><img src="chapter1//assets/%E8%BF%87%E9%81%93%E7%AE%B1%E5%AD%90.png" alt="" /></p>
+<ul>
+<li>空房间</li>
+</ul>
+<p><img src="chapter1//assets/%E7%A9%BA%E6%88%BF%E9%97%B4.png" alt="" /></p>
+<ul>
+<li>水池</li>
+</ul>
+<p><img src="chapter1//assets/%E6%B0%B4%E6%B1%A0.png" alt="" /></p>
+<h2 id="可以获得的好东西"><a class="header" href="#可以获得的好东西">可以获得的好东西</a></h2>
+<ul>
+<li>
+<p>各种宝石，包括钻石，但是品质不会太高</p>
+</li>
+<li>
+<p>各种钢、黄铜、青铜、不锈钢、殷钢的锭、板、杆、环等一系列东西</p>
+</li>
+<li>
+<p>装满了金属粉末、板材的板条箱，撬棍右键打开</p>
+</li>
+<li>
+<p>原版的铁工具和木工具</p>
+</li>
+<li>
+<p>圣水、各种酒精饮料（小孩子不要去喝）、紫色妹汁</p>
+</li>
+<li>
+<p>打火机、铂金打火机</p>
+</li>
+<li>
+<p>各种钱币，铂、金、铜都有可能</p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="简易矿物处理"><a class="header" href="#简易矿物处理">简易矿物处理</a></h1>
+<h2 id="为什么你能一个矿出一个锭我却只能出一个颗粒"><a class="header" href="#为什么你能一个矿出一个锭我却只能出一个颗粒">为什么你能一个矿出一个锭，我却只能出一个颗粒？</a></h2>
+<p>其实辣，这篇基本和GT5差不多，敲碎的矿物可以用原版炼药锅洗干净，洗干净后敲碎可以再洗干净一遍。但是有些坑爹细节改变了。</p>
+<h2 id="如何在gt6正常的处理矿物"><a class="header" href="#如何在gt6正常的处理矿物">如何在GT6正常的处理矿物</a></h2>
+<p>在格雷科技6中，使用完整的矿物处理流程显得极为重要（鬼知道哪天你需要的稀有金属就找也找不到）同时由于坩埚不能吃各种脏矿（石头含量太高会boom）所以说清理仔细一点何乐而不为呢？</p>
+<h2 id="矿物的一生被敲了多少遍啊"><a class="header" href="#矿物的一生被敲了多少遍啊">矿物的一生，被敲了多少遍啊</a></h2>
+<p>本次我们勇敢的志愿者是几组红宝石矿！它们粉红的样子很是**。那啥，我还是不配图了，太麻烦了会死人哒！！！（哎呦卧槽我怎么卖萌了）</p>
+<h3 id="处理方式a"><a class="header" href="#处理方式a">处理方式A</a></h3>
+<ol>
+<li>把你挖出来的矿放在地上用锤子敲碎(别想要丢熔炉／坩埚辣，自己看看里面有多少石头!)</li>
+<li>丢进洗矿的炼药锅(每桶水只能洗掉3个，而不是以前能丢多少就洗多少)</li>
+<li>再次工作台里敲碎</li>
+<li>再洗一次</li>
+<li>你就获得纯的矿物啦！</li>
+</ol>
+<h3 id="处理方式b"><a class="header" href="#处理方式b">处理方式B</a></h3>
+<ol>
+<li>把你挖出来的矿放在地上用锤子敲碎</li>
+<li>再在工作台敲一次</li>
+<li>丢进炼药锅</li>
+<li>你就的到你要的矿物啦！</li>
+</ol>
+<table><thead><tr><th align="left">矿物类型</th><th align="left">处理方式</th><th align="left">产物</th><th align="left">副产物</th></tr></thead><tbody>
+<tr><td align="left">粉碎矿石</td><td align="left">丢进炼药锅/热能离心/洗矿</td><td align="left">纯净矿石/离心粉碎矿石</td><td align="left">小撮纯净/离心矿石，小撮粉末，金属颗粒</td></tr>
+<tr><td align="left">含杂粉末</td><td align="left">丢炼药锅/电解/离心</td><td align="left">粉末</td><td align="left">小撮粉末</td></tr>
+<tr><td align="left">纯净粉末</td><td align="left">丢炼药锅/电解</td><td align="left">粉末</td><td align="left">小撮粉末</td></tr>
+<tr><td align="left">离心粉碎矿石</td><td align="left">研磨/敲碎</td><td align="left">粉末</td><td align="left">无</td></tr>
+<tr><td align="left">纯净粉碎矿石</td><td align="left">研磨/敲碎/筛滤</td><td align="left">纯净粉末/或宝石/煤</td><td align="left">无</td></tr>
+</tbody></table>
+<h3 id="处理方式d"><a class="header" href="#处理方式d">处理方式D</a></h3>
+<ol>
+<li>仔细看NEI</li>
+<li>读几遍NEI</li>
+<li>研究到底怎么处理</li>
+<li>慢慢处理吧，半小时呢</li>
+</ol>
+<p>P.S:部分矿石可以通过磁离心产生更高产量<br />
+P.P.S:宝石矿物在粉碎矿物阶段可以直接合成有瑕疵的宝石，通过筛滤可以有几率获得更高级别宝石</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="单位"><a class="header" href="#单位">单位</a></h1>
+<h2 id="算错数气死你耗能这么大不好好算算"><a class="header" href="#算错数气死你耗能这么大不好好算算">算错数气死你，耗能这么大不好好算算？</a></h2>
+<p>格雷科技6具有多种能量单位并且使用时需要转换，通用能量单位为GU。能源单位之间转换需要用相应的引擎，锅炉，发电机等。转换具有50%损耗，反复转换是一件很亏本的事情。</p>
+<h2 id="单位列表"><a class="header" href="#单位列表">单位列表</a></h2>
+<table><thead><tr><th align="left">名称</th><th align="left">单位</th><th align="left">描述</th></tr></thead><tbody>
+<tr><td align="left">热能</td><td align="left">HU</td><td align="left">通过加热器产生的热能，加热面手贱乱摸会有伤害。可以加热坩埚和驱动热能机器。</td></tr>
+<tr><td align="left">动能</td><td align="left">KU</td><td align="left">活塞运动 据了解可用于ROC</td></tr>
+<tr><td align="left">旋转动能</td><td align="left">RU</td><td align="left">大概就是旋转(站在上面会被迫转圈) 据了解可用于ROC</td></tr>
+<tr><td align="left">磁场能</td><td align="left">MU</td><td align="left">就是电磁铁辣</td></tr>
+<tr><td align="left">激光能</td><td align="left">LU</td><td align="left">嗯，激光器产生的激光，使用光纤无损传输。</td></tr>
+<tr><td align="left">电能</td><td align="left">EU</td><td align="left">谁都知道这是啥</td></tr>
+<tr><td align="left">量子能</td><td align="left">QU</td><td align="left">玄学能量</td></tr>
+<tr><td align="left">格雷能源单位</td><td align="left">GU</td><td align="left">在NEI表示gt耗能</td></tr>
+<tr><td align="left">红石通量</td><td align="left">RF</td><td align="left">谁都知道啊</td></tr>
+<tr><td align="left">压力</td><td align="left">Gb(Gibbl)</td><td align="left">气体压力</td></tr>
+<tr><td align="left">升</td><td align="left">L</td><td align="left">流体单位，根据本聪明高智商的indoorsnb脑洞，我认为1L=1Mb，GT作者只是为了B格。</td></tr>
+<tr><td align="left">千克</td><td align="left">KG</td><td align="left"></td></tr>
+<tr><td align="left">开尔文</td><td align="left">K</td><td align="left">温度单位，用于表示材料熔点，沸点等数据。同时温度面板也使用开尔文(K)作为单位。常温下的为（忘记了）K</td></tr>
+<tr><td align="left">蒸汽能</td><td align="left">SU</td><td align="left">就是蒸汽</td></tr>
+<tr><td align="left">制冷能</td><td align="left">CU</td><td align="left">就是把东西变凉</td></tr>
+</tbody></table>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="手动机器"><a class="header" href="#手动机器">手动机器</a></h1>
+<h2 id="嗯别问我item的研钵去哪儿了某次gt更新吃掉了"><a class="header" href="#嗯别问我item的研钵去哪儿了某次gt更新吃掉了">嗯，别问我item的研钵去哪儿了。某次GT更新吃掉了</a></h2>
+<p>因为初期除了坩埚没啥机器，所以土人得用一些手动的廉价机器来处理一些东西。</p>
+<h2 id="手动机器机制"><a class="header" href="#手动机器机制">手动机器机制</a></h2>
+<ul>
+<li>边上的NEI记号右键可以打开NEI合成</li>
+<li>会消耗饥饿</li>
+<li>有些手动机器损耗很大（只剩一半）</li>
+<li>有处理体积限制/不能处理具有副产物的</li>
+</ul>
+<p><img src="chapter1//assets/%E4%BA%A7%E9%87%8F%E6%AF%94%E8%BE%83.png" alt="" /></p>
+<p>如图，上方为机器洗一组粉碎矿物，下方为手动处理一组粉碎矿物，一目了然，显而易见</p>
+<ul>
+<li>看着很丑</li>
+<li>初期必备</li>
+<li>有半砖体积和方块体积两种（没啥区别，但是半砖的放在一个方块上好看）</li>
+</ul>
+<h2 id="一群手动机器们"><a class="header" href="#一群手动机器们">一群手动机器们</a></h2>
+<p>这些就是我说的手动机器辣，别问我为毛大多数都一个样（火锅），这是GT作者懒的后果啊！</p>
+<h3 id="打磨石"><a class="header" href="#打磨石">打磨石</a></h3>
+<img src="chapter1//assets/打磨石.png" width="64" height=64 />
+<p>嗯，打磨石其实是钢做的，用于偷懒人士们闲的无聊用坩埚做工具。你需要在上面放沙子来打磨粗糙的工具。因为是手动机器，显得很傻。</p>
+<h3 id="搅拌盆和搅拌桌一家"><a class="header" href="#搅拌盆和搅拌桌一家">搅拌盆和搅拌桌一家</a></h3>
+<p><img src="chapter1//assets/搅拌盆.png" width="64" height="64" /> <img src="chapter1//assets/搅拌桌.png" width="64" height="64" /></p>
+<p>嗯，它们都一个样，把东西放进去搅拌一下而已。缺点是都有损耗，粉末混合具有50%的损耗（真是不和谐）</p>
+<h3 id="缩水的浸洗和普通的浸洗"><a class="header" href="#缩水的浸洗和普通的浸洗">缩水的浸洗和普通的浸洗</a></h3>
+<p><img src="chapter1//assets/浸洗盆.png" width="64" height="64" /> <img src="chapter1//assets/浸洗桌.png" width="64" height="64" /> <img src="chapter1//assets/木质浸洗盆.png" width="64" height="64" /> <img src="chapter1//assets/木质浸洗桌.png" width="64" height="64" /></p>
+<p>可以把流体倒进去然后把一些东西浸没进去，比如说镀锌什么的。缩水版本则是木头做的，高温的东西倒进去后果自负。据了解可以通过一些方法把坩埚的金属倒出后倒入浸洗盆。</p>
+<h3 id="来自玄学的榨汁机黑科技"><a class="header" href="#来自玄学的榨汁机黑科技">来自玄学的榨汁机黑科技</a></h3>
+<img src="chapter1//assets/榨汁机.png" width="64" height="64" />
+<p>这东西虽然看着很小而且像个火锅，但是可以榨汁。别问我这是什么原理，我是看不懂了。不能榨有item产物的（也就是说你不能榨橡胶木），但是用来榨橡胶是足够了。</p>
+<h3 id="我认为可能没什么人做的铸币模具"><a class="header" href="#我认为可能没什么人做的铸币模具">我认为可能没什么人做的铸币模具</a></h3>
+<img src="chapter1//assets/铸币模具.png" width="64" height="64" />
+<p>和名字一个用处，做硬币。我认为硬币是个造点什么有趣的东西的好材料，但是你用这个难道你不累吗。</p>
+<h3 id="初期必备的筛粉台"><a class="header" href="#初期必备的筛粉台">初期必备的筛粉台</a></h3>
+<img src="chapter1//assets/筛粉台.png" width="64" height="64" />
+<p>这东西其实只能筛方块，比如说沙矿啊什么的。这是砂矿和沙矿唯一的初期处理方式。当然你可以筛沙子什么的东西。</p>
+<h3 id="挑剔的研钵"><a class="header" href="#挑剔的研钵">挑剔的研钵</a></h3>
+<img src="chapter1//assets/研钵.png" width="64" height="64" />
+<p>因为某些原因，GT作者删了全部可以在工作台用的研钵。（太OP？）所以说这个破玩意就被添加了，长得特别像火锅。因为它不能吃锭（但是吃颗粒什么的）所以显得特别挑食和烦人。（谁也不喜欢拿着一箱子颗粒来打粉不是嘛）</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="基础熔炼"><a class="header" href="#基础熔炼">基础熔炼</a></h1>
+<h2 id="死亡率20"><a class="header" href="#死亡率20">死亡率20%</a></h2>
+<p>格雷科技6加入了熔点和沸点，由于熔炉不科学且不能产生高温，所以它只能烧基础金属(铜,锡,铅,铋)。在制作坩埚后，你就可以用会爆炸的刺激工具——坩锅。一台穷酸型套瓷坩埚配合加热器和模具可以搞定大多数金属。</p>
+<h2 id="坩锅机制"><a class="header" href="#坩锅机制">坩锅机制</a></h2>
+<ul>
+<li>停止加温后开始降温</li>
+<li>加热器产热越高升温越快</li>
+<li>温度超过坩埚容许温度会爆炸（造成伤害）</li>
+<li>温度超过内部材料沸点材料会蒸发（造成伤害）</li>
+<li>通过活动扳手可以开启模具自动输入流体和红石控制设置</li>
+</ul>
+<h3 id="标准的坩埚熔炼装置"><a class="header" href="#标准的坩埚熔炼装置">标准的坩埚熔炼装置</a></h3>
+<h4 id="一个完善的坩埚熔炼装置必须具有以下组件"><a class="header" href="#一个完善的坩埚熔炼装置必须具有以下组件">一个完善的坩埚熔炼装置必须具有以下组件</a></h4>
+<ol>
+<li>
+<p>热源（加热器，各式燃烧室）</p>
+</li>
+<li>
+<p>坩埚（初期使用陶瓷坩埚，是一种十分划算的坩埚）</p>
+</li>
+</ol>
+<h5 id="额外组件"><a class="header" href="#额外组件">额外组件</a></h5>
+<ol>
+<li>浇铸口</li>
+<li>浇铸盆</li>
+<li>温度测量面板／手持式温度计</li>
+<li>模具</li>
+</ol>
+<h4 id="最基础的搭建方式"><a class="header" href="#最基础的搭建方式">最基础的搭建方式</a></h4>
+<ol>
+<li>做几个坩埚和几个模具（有你炸的）还有一个加热器</li>
+<li>放坩埚到地上</li>
+<li>热源放在除了上方外任意位置（至少一个，并且加热面对准坩埚）</li>
+<li>模具紧贴坩埚(必须水平)</li>
+<li>完成（开锅等炸？）</li>
+</ol>
+<h4 id="小技巧-1"><a class="header" href="#小技巧-1">小技巧</a></h4>
+<ul>
+<li>用方块堵住非电力／rf加热器可以使其停止加热。使用红石可以控制电力／rf加热器（似乎需要用扳手／活动扳手设置）。</li>
+<li>用水可以降低温度，但是会造成伤害（起码你不会爆炸了不是吗</li>
+<li>越少的东西加热越快越多的东西加热越慢</li>
+<li>坩埚可以容16unit的物质，但是如果一次投入一组，它也可以超容</li>
+<li>防化服可以避免炸的时候把你也人间蒸发。</li>
+<li>金属倒出并凝固后其实还是烫的，别作死</li>
+</ul>
+<h3 id="模具制作"><a class="header" href="#模具制作">模具制作</a></h3>
+<p>既然建好了坩埚，那么就应该来雕刻模具了，这些坑爹的模具最好和坩埚使用相同的材质（不然boomshakalaka）。雕刻使用凿子进行右键，手残的要小心，没法撤回。所有工具模具只能制作粗糙的工具，需要打磨。但是板和其他零件类不需要打磨。模具小耳朵可以设置模具自动输入，其他位置都是设置红石控制。<br />
+<code>X代表被凿过，O代表没被凿过. 1Unit=1个锭</code></p>
+<h4 id="锭1000units小块0250units板1000units"><a class="header" href="#锭1000units小块0250units板1000units">锭(1.000Units)|小块(0.250Units)|板(1.000Units)</a></h4>
+<pre><code class="language-text">  XXXOO        XXOOO        XXXXX
+  XXXOO        XXOOO        XXXXX
+  XXXOO        OOOOO        XXXXX
+  XXXOO        OOOOO        XXXXX
+  XXXOO        OOOOO        XXXXX
+</code></pre>
+<h4 id="小块板0111units螺栓0125units杆0500units"><a class="header" href="#小块板0111units螺栓0125units杆0500units">小块板(0.111Units)|螺栓(0.125Units)|杆(0.500Units)</a></h4>
+<pre><code class="language-text">  OOOOO        XXOOO        OOOOO
+  OXXXO        OOOOO        OOOOO
+  OXXXO        OOOOO        XXXXX
+  OXXXO        OOOOO        OOOOO
+  OOOOO        OOOOO        OOOOO
+</code></pre>
+<h4 id="万能铲1000units剑2000units锉1500"><a class="header" href="#万能铲1000units剑2000units锉1500">万能铲(1.000Units)|剑（2.000Units)|锉(1.500)</a></h4>
+<pre><code class="language-text">  OOXOO        OOXOO        OXXXO
+  OXXXO        OXXXO        OXXXO
+  OXXOO        OXXXO        OXXXO
+  OXXXO        OXXXO        OOXOO
+  OOOOO        OXXXO        OOXOO
+</code></pre>
+<h4 id="镐3000units锯2000units箭0250units"><a class="header" href="#镐3000units锯2000units箭0250units">镐(3.000Units)|锯(2.000Units)|箭(0.250Units)</a></h4>
+<pre><code class="language-text">  OOOOO        OOOOO        OOOOO
+  OXXXO        XXXXX        OOXOO
+  XOOOX        XXXXX        OOXOO
+  OOOOO        OOOOO        OXXXO
+  OOOOO        OOOOO        OOOOO
+</code></pre>
+<h4 id="齿轮4000units小型齿轮1000units凿子1500units"><a class="header" href="#齿轮4000units小型齿轮1000units凿子1500units">齿轮(4.000Units)|小型齿轮(1.000Units)|凿子(1.500Units)</a></h4>
+<pre><code class="language-text">  XOXOX        OXOXO        OXXXO
+  OXXXO        XXXXX        OOXOO
+  XXOXX        OXOXO        OOXOO
+  OXXXO        XXXXX        OOXOO
+  XOXOX        OXOXO        OOXOO
+</code></pre>
+<h4 id="环0250units斧3000units长杆1000units"><a class="header" href="#环0250units斧3000units长杆1000units">环(0.250Units)|斧(3.000Units)|长杆(1.000Units)</a></h4>
+<pre><code class="language-text">  OOOOO        OOOOO        XOOOO
+  OXXXO        OXXXO        OXOOO
+  OXOXO        OXXXO        OOXOO
+  OXXXO        OXOOO        OOOXO
+  OOOOO        OOOOO        OOOOX
+</code></pre>
+<h4 id="铲1000units锤6000units犁6000units"><a class="header" href="#铲1000units锤6000units犁6000units">铲(1.000Units)|锤(6.000Units)|犁(6.000Units)</a></h4>
+<pre><code class="language-text">  OOXOO        XXXOO        XXXXX
+  OXXXO        XXXOO        XXXXX
+  OXXXO        XOXOO        XXXXX
+  OXXXO        XXXOO        XXXXX
+  OOOOO        XXXOO        OOXOO
+</code></pre>
+<h4 id="外壳0500units螺丝刀0500units锄2000units"><a class="header" href="#外壳0500units螺丝刀0500units锄2000units">外壳(0.500Units)|螺丝刀(0.500Units)|锄(2.000Units)</a></h4>
+<pre><code class="language-text">  XXXOX        OOOOO        OOOOO
+  XXXOX        OOXOO        OOXXO
+  XXXOX        OOXOO        OXXXO
+  OOOOX        OOXOO        OOOOO
+  XXXOO        OOXOO        OOOOO
+</code></pre>
+<h4 id="镰刀3000units双刃斧5000units"><a class="header" href="#镰刀3000units双刃斧5000units">镰刀(3.000Units)|双刃斧(5.000Units)</a></h4>
+<pre><code class="language-text">  OOOOO        OOOOO
+  OXXXX        XXXXX
+  XXXXX        XXXXX
+  OOOOO        XOOOX
+  OOOOO        OOOOO
+</code></pre>
+<p>PS:金属坩埚要扳手，陶瓷扳手要凿子<br />
+PPS:模具需要用凿子来雕刻<br />
+PPPS:自动化在后面<br />
+PPPPS:模具的被雕刻位置可以平移</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="点火工具"><a class="header" href="#点火工具">点火工具</a></h1>
+<h2 id="装逼专用-铂金打火机"><a class="header" href="#装逼专用-铂金打火机">装逼专用-铂金打火机</a></h2>
+<p>在GT5中，GT已经加入了两种打火机（然并卵）。在GT6，欧非测试核心问题就是~~捡到陨铁~~找到高级点火工具（打火机，铂金打火机）。如果找不到只能拿干草做辣鸡钻木取火，或者搞火柴和打火石。使用燃料的加热器和焦炉都需要打火，对着正面打几下就好（废话）</p>
+<p>（从左到右：起火器50%，燧石30%，火柴90%，火柴盒90%，一次性打火机90%，打火机100%，铂金打火机100%）<br />
+<img src="chapter1//assets/%E7%82%B9%E7%81%AB%E5%B7%A5%E5%85%B7.png" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="多方块-焦炉"><a class="header" href="#多方块-焦炉">多方块-焦炉</a></h1>
+<h2 id="你可能需要保证它不熄灭"><a class="header" href="#你可能需要保证它不熄灭">你可能需要保证它不熄灭</a></h2>
+<p>GT6成功180度翻身辣，以前使用RC高炉的日子再也不需要辣。GT6一台焦炉能在相同时间内生产出RC高炉16倍的焦煤/焦褐煤/木炭。但是它也有缺点：需要点火。</p>
+<h3 id="结构"><a class="header" href="#结构">结构</a></h3>
+<p>焦炉的结构为<code>3*3*3</code>，正面中间为一个焦炉核心。神奇的GT焦炉可以在上方／下方放置输入／输出用漏斗或者其他什么。<br />
+每一台焦炉需要消耗1个<code>焦炉</code>方块和25个<code>耐火砖</code>方块。</p>
+<h3 id="特性-1"><a class="header" href="#特性-1"><strong>特性</strong></a></h3>
+<p>格雷格雷焦炉的墙壁不共享，但可以贴着放，另外结构不完整的情况下，焦炉方块仍然能打开放入物品，但不可点火。</p>
+<h4 id="耐火砖方块"><a class="header" href="#耐火砖方块"><code>耐火砖</code>方块</a></h4>
+<p><img src="chapter1//assets/%E8%80%90%E7%81%AB%E7%A0%96.png" alt="" /></p>
+<h4 id="焦炉方块"><a class="header" href="#焦炉方块"><code>焦炉</code>方块</a></h4>
+<p><img src="chapter1//assets/%E7%84%A6%E7%82%89%E6%96%B9%E5%9D%97.png" alt="" /></p>
+<h4 id="焦炉第一层"><a class="header" href="#焦炉第一层">焦炉第一层</a></h4>
+<p><img src="chapter1//assets/%E7%84%A6%E7%82%89%E4%B8%8B.png" alt="" /></p>
+<h4 id="焦炉第二层"><a class="header" href="#焦炉第二层">焦炉第二层</a></h4>
+<p><img src="chapter1//assets/%E7%84%A6%E7%82%89%E4%B8%AD.png" alt="" /></p>
+<h4 id="焦炉第三层"><a class="header" href="#焦炉第三层">焦炉第三层</a></h4>
+<p><img src="chapter1//assets/%E7%84%A6%E7%82%89%E4%B8%8A.png" alt="" /></p>
+<h4 id="焦炉完成体"><a class="header" href="#焦炉完成体">焦炉完成体</a></h4>
+<p><img src="chapter1//assets/%E7%84%A6%E7%82%89%E5%AE%8C%E6%88%90.png" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="化合物处理"><a class="header" href="#化合物处理">化合物处理</a></h1>
+<h2 id="玄学炼金术"><a class="header" href="#玄学炼金术">玄学炼金术？</a></h2>
+<p>如果在GT6.04.01 开始玩，你会发现一件很刺激的事情：和谐友爱的单质矿物几乎没辣，没辣，没辣！（重要的事说三遍）</p>
+<p>原来可爱的矿物们都变成了各种屎黄色矿物。那么这些奇葩矿该怎么处理呢？你需要添加剂。</p>
+<h2 id="什么是添加剂"><a class="header" href="#什么是添加剂">什么是'添加剂'</a></h2>
+<p>新版本的化合物矿石需要你加一点什么以产生某种玄学反应生成单质（我也不知道其他残渣去哪儿了）。这些添加剂会在反应中消耗。</p>
+<h2 id="如何使用添加剂"><a class="header" href="#如何使用添加剂">如何使用添加剂</a></h2>
+<p>添加剂使用需要在坩埚中熔炼时加入，在反应温度到达时，它和矿物会发生反应并且产生你要获得的东西。最明显的表现是坩埚内不明物体突然变少了。注意：先加完了再开始烧，不然到时候加错了有你哭的。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="合金制作"><a class="header" href="#合金制作">合金制作</a></h1>
+<h2 id="为什么坩埚里加入一种合金和另一种合金不能产生和这两个合金单质混在一起的结果"><a class="header" href="#为什么坩埚里加入一种合金和另一种合金不能产生和这两个合金单质混在一起的结果">为什么坩埚里加入一种合金和另一种合金不能产生和这两个合金单质混在一起的结果？！</a></h2>
+<p>合金制作从原来简单的无序合成粉末/合金炉/高炉变成了在坩埚中混合/搅拌碗，你需要使用坩埚来混合金属或用搅拌碗混合粉末。在坩埚中，你需要按照量投入金属（不然变成不了合金）并且要按照一个合适的次序（不互相反应的先丢比较好，或者一块丢完再开烧（不然你做不锈钢变成殷钢和各种金属））当一堆金属全部达到熔点后突然变色就说嘛合金做好了，如果是加入添加剂的金属（红石合金，红色合金（暂定名：红硅））那么它的体积会突然减少，但是如果眼瞎的话不一定会变颜色。</p>
+<h3 id="示例-不锈钢不含玄学添加剂"><a class="header" href="#示例-不锈钢不含玄学添加剂">示例-不锈钢(不含玄学添加剂)</a></h3>
+<h3 id="示例-红石合金红硅含添加剂"><a class="header" href="#示例-红石合金红硅含添加剂">示例-红石合金(红硅（含添加剂)</a></h3>
+<p>值得提醒一下：生铁也是铁，别以为生铁不能用了（谁叫我每次都作出生铁呢）</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gt-forestry"><a class="header" href="#gt-forestry">GT-Forestry</a></h1>
+<h2 id="这是来自gt作者浓浓的恶意"><a class="header" href="#这是来自gt作者浓浓的恶意">这是来自GT作者浓浓的恶意</a></h2>
+<p>GT6作者不仅加入了一堆树，它们还支持林业的林场。这些树都有多重生长状态以便解决和别的mod一样一个骨粉就长大和显得更加逼真（奇怪）。你可以通过看树苗大小来理解它长到什么阶段了。</p>
+<h2 id="生长状态"><a class="header" href="#生长状态">生长状态</a></h2>
+<p>每种树苗已知有3种生长状态，生长状态可以通过大小或meta观察到。一般来说即将成熟的树苗会在砍掉遮挡物后很快长大，所以说密集的林场可能很有意思。</p>
+<img src="chapter1//assets/生长状态.png" width="612" height=305 />
+<p>这张图显示的是一棵树苗生长最大的状态和初始状态。</p>
+<h2 id="树"><a class="header" href="#树">树</a></h2>
+<p>现在GT6生成的树有六种：橡胶树，枫树（枫树mod表示不服），榛树，彩虹树（基佬树），柳树，高红槿。 ~~因为我比较懒所以懒得去一个个找出来图了，反正就是一堆奇葩的树就对了。~~现在我决定加点图了</p>
+<h3 id="橡胶树"><a class="header" href="#橡胶树">橡胶树</a></h3>
+<p>嗯，其实GT6橡胶树是一种超级牛逼的福利，你看看它的样子就知道了啊</p>
+<img src="chapter1//assets/橡胶树.png" width="225" height=305 />
+<p>嗯，你看啊，是不是很准确的一棵树的样子，比大屌树好看多了吧？
+部分的橡胶树自带一个产胶洞。</p>
+<h3 id="柳树"><a class="header" href="#柳树">柳树</a></h3>
+<p>柳树具有很绿的板子和木头，它的特性是~~原谅她~~树叶会掉落木棍（群峦？！）和木头可以烧出2个木炭。简直是妥妥的福利啊！</p>
+<img src="chapter1//assets/柳树.png" width="270" height=250 />
+<h3 id="枫树"><a class="header" href="#枫树">枫树</a></h3>
+<p>枫树是一种树，和加拿大可能有什么关系。但是不知道为什么似乎可以用来产枫糖。（明明是糖枫才产啊）但是因为GT作者很腹黑，他把枫树上应该长出来的不科学树洞给和谐掉了，得自己钻一个出来。</p>
+<img src="chapter1//assets/枫树.png" width="215" height=300 />
+<h3 id="高红槿"><a class="header" href="#高红槿">高红槿</a></h3>
+<p>顾名思，它很高很红，除了这两点没啥特点了。</p>
+<img src="chapter1//assets/高红槿.png" width="177" height=307 />
+<h3 id="榛树"><a class="header" href="#榛树">榛树</a></h3>
+<p>据不靠谱的消息，你可以在这棵树上获得一些榛子。似乎是通过打树叶，但是我太懒从来没试过。</p>
+<img src="chapter1//assets/榛树.png" width="375" height=230 />
+<h3 id="彩虹树"><a class="header" href="#彩虹树">彩虹树</a></h3>
+<p>当GT作者开始嗨皮的时候，总会加一点奇怪的东西。彩虹树这种东西的出现似乎没什么令人惊讶的。它也可以提取彩虹树汁，用于各种食物。（可惜不是白白的，粘粘的那种）</p>
+<img src="chapter1//assets/彩虹树.png" width="220" height=332 />
+<h2 id="如何获取树胶树液"><a class="header" href="#如何获取树胶树液">如何获取树胶/树液</a></h2>
+<p>因为GT作者和IHL作者不知道发生过什么PY交易，GT和IHL一样有了一个树胶/树脂收集袋。有趣的是它们都不是特别大。（和IHL的比简直超小）每个收集袋可以放一组或未知量流体（我从来没试过枫树和彩虹树，但是我认为是流体）</p>
+<img src="chapter1//assets/提取乳胶.png" width="232" height=333 />
+<p>你可能需要一把电钻在没有孔的树上钻个洞才能获得树液，橡胶树自带了洞。如果有了洞，就可以把收集袋插入树上辣！但是GT作者觉得如果你把整个树砍掉只剩下一个洞可能不太清真，所以说会每隔30秒检测一次，有几率生成产物，同时会检测你有没有把树叶砍掉。收集袋的容量是一组，所以说不需要经常收，大概5棵树就够了。我因为太懒所以只放了橡胶树做例子。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gt式养老"><a class="header" href="#gt式养老">GT式养老</a></h1>
+<h2 id="你们发展的这么快无不无聊啊"><a class="header" href="#你们发展的这么快无不无聊啊">你们发展的这么快无不无聊啊！</a></h2>
+<p>那啥，标题骗你的，其实GT是养老MOD哦。在刺激的炸锅挂机，~~地牢~~避难所蹦迪以及满地挖洞后，有不少有趣的东西够你玩。</p>
+<ol>
+<li>欧皇们试试看杂交吧，GT6加入了比gt5还要多的杂交作物，包括各种梅，各种奇怪植物，一堆高度不大对的苹果树等。它们还有完全配套的食物制作等，你可以做出一堆食物。</li>
+<li>逗比们可以试试看酿造，GT6的食物系统可以在你吃错药的时候提供BUFF（喝高了）</li>
+<li>作死党请愉快的尝试制造各种高能的东西，比如说高能炸药，喝胶水，闲的没事学习坩埚杀boos玄学。（坑死自己我只呵呵）</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="中阶-机器与自动化"><a class="header" href="#中阶-机器与自动化">中阶-机器与自动化</a></h1>
+<h5 id="你可能要一些欧能来到这儿"><a class="header" href="#你可能要一些欧能来到这儿">你可能要一些欧能来到这儿？</a></h5>
+<h3 id="简介-1"><a class="header" href="#简介-1">简介</a></h3>
+<p>本章将会介绍GT中阶科技撸的机器和自动化的设定方式等，不会介绍具体自动化案例，</p>
+<h3 id="科技树-1"><a class="header" href="#科技树-1">科技树</a></h3>
+<p>太复杂懒得做</p>
+<h3 id="小技巧-2"><a class="header" href="#小技巧-2">小技巧</a></h3>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="产能设备简介"><a class="header" href="#产能设备简介">产能设备简介</a></h1>
+<h5 id="格neng雷yuan科zhuan技huan"><a class="header" href="#格neng雷yuan科zhuan技huan">格(neng)雷(yuan)科(zhuan)技(huan)</a></h5>
+<p>GT6大多数产能设备都是能源转化的，各种能源单位转化损耗为50%。通用单位为GU，每单位GU等于（自己脑洞吧）,其中能够传输的只有<code>蒸汽能(SU)</code>,<code>电能(EU)</code>,<code>激光能(LU)</code>,<code>红石通量(RF)。部分设备支持直接输出RF（无损／有损）</code></p>
+<p>输出计算方式为输入*效率/比例</p>
+<h3 id="产能设备介绍"><a class="header" href="#产能设备介绍">产能设备介绍</a></h3>
+<table><thead><tr><th align="left">名称</th><th align="left">图片</th><th align="left">输入</th><th align="left">输出</th><th align="left">传输方式</th><th align="left">效率</th><th align="left">比例</th><th align="left">强化/致密版本</th></tr></thead><tbody>
+<tr><td align="left">蒸汽锅炉</td><td align="left"></td><td align="left">HU</td><td align="left">SU</td><td align="left">流体</td><td align="left">100%</td><td align="left">1:2</td><td align="left">是</td></tr>
+<tr><td align="left">燃烧室(固体)</td><td align="left"></td><td align="left">固体燃料(部分)</td><td align="left">HU</td><td align="left">贴脸</td><td align="left">45~95%</td><td align="left"></td><td align="left">是</td></tr>
+<tr><td align="left">燃烧室(流体)</td><td align="left"></td><td align="left">流体燃料</td><td align="left">HU</td><td align="left">贴脸</td><td align="left">70~100%</td><td align="left"></td><td align="left">是</td></tr>
+<tr><td align="left">燃烧室(气体)</td><td align="left"></td><td align="left">气体燃料</td><td align="left">HU</td><td align="left">贴脸</td><td align="left">70~100%</td><td align="left"></td><td align="left">是</td></tr>
+<tr><td align="left">电力加热器</td><td align="left"></td><td align="left">EU</td><td align="left">HU</td><td align="left">贴脸</td><td align="left">50%</td><td align="left">2:1</td><td align="left">否</td></tr>
+<tr><td align="left">红石通量加热器</td><td align="left"></td><td align="left">RF</td><td align="left">HU</td><td align="left">贴脸</td><td align="left">50%</td><td align="left">4:1</td><td align="left">否</td></tr>
+<tr><td align="left">电动引擎</td><td align="left"></td><td align="left">EU</td><td align="left">KU</td><td align="left">贴脸</td><td align="left">100%</td><td align="left">2:1</td><td align="left">否</td></tr>
+<tr><td align="left">红石通量引擎</td><td align="left"></td><td align="left">RF</td><td align="left">KU</td><td align="left">贴脸</td><td align="left">100%</td><td align="left">8:1</td><td align="left">否</td></tr>
+<tr><td align="left">蒸汽引擎</td><td align="left"></td><td align="left">SU</td><td align="left">KU</td><td align="left">贴脸</td><td align="left">30~64.5%</td><td align="left">2:1</td><td align="left">是</td></tr>
+<tr><td align="left">电力旋转动能引擎</td><td align="left"></td><td align="left">EU</td><td align="left">RU</td><td align="left">贴脸</td><td align="left">50%</td><td align="left">1:1</td><td align="left">否</td></tr>
+<tr><td align="left">红石通量旋转动能引擎</td><td align="left"></td><td align="left">RU</td><td align="left">RU</td><td align="left">贴脸</td><td align="left">50%</td><td align="left">4:1</td><td align="left">否</td></tr>
+<tr><td align="left">蒸汽旋转动能涡轮机</td><td align="left"></td><td align="left">SU</td><td align="left">RU</td><td align="left">贴脸</td><td align="left">66.6%</td><td align="left">1:1</td><td align="left">否</td></tr>
+<tr><td align="left">电磁铁</td><td align="left"></td><td align="left">EU</td><td align="left">MU</td><td align="left">贴脸</td><td align="left">100%</td><td align="left">2:1</td><td align="left">否</td></tr>
+<tr><td align="left">红石通量磁场产生器</td><td align="left"></td><td align="left">RF</td><td align="left">MU</td><td align="left">贴脸</td><td align="left">100%</td><td align="left">8:1</td><td align="left">否</td></tr>
+<tr><td align="left">太阳能电池板</td><td align="left"></td><td align="left"></td><td align="left">EU</td><td align="left">导线</td><td align="left"></td><td align="left"></td><td align="left">否</td></tr>
+<tr><td align="left">BC镭射器</td><td align="left"></td><td align="left">EU</td><td align="left">RF</td><td align="left">RFapi</td><td align="left">100%</td><td align="left">1:4</td><td align="left">否</td></tr>
+<tr><td align="left">CO2激光器</td><td align="left"></td><td align="left">EU</td><td align="left">LU</td><td align="left">光纤</td><td align="left">50%</td><td align="left">1:1</td><td align="left">否</td></tr>
+<tr><td align="left">激光接收器</td><td align="left"></td><td align="left">LU</td><td align="left">EU</td><td align="left"></td><td align="left">50%</td><td align="left">1:1</td><td align="left">否</td></tr>
+<tr><td align="left">通量镭射器</td><td align="left"></td><td align="left">RF</td><td align="left">LU</td><td align="left">光纤</td><td align="left">50%</td><td align="left">4:1</td><td align="left">否</td></tr>
+<tr><td align="left">红石通量发电机</td><td align="left"></td><td align="left">RU</td><td align="left">RF</td><td align="left">RFapi</td><td align="left">100%</td><td align="left">1:4</td><td align="left">否</td></tr>
+<tr><td align="left">量子充能器</td><td align="left"></td><td align="left">LU</td><td align="left">QU</td><td align="left">贴脸</td><td align="left">50%</td><td align="left">1:1</td><td align="left">否</td></tr>
+<tr><td align="left">发电机</td><td align="left"></td><td align="left">RU</td><td align="left">EU</td><td align="left">电线</td><td align="left">75%</td><td align="left">1:1</td><td align="left">否</td></tr>
+<tr><td align="left">红石通量半导体制冷器</td><td align="left"></td><td align="left">RF</td><td align="left">50%CU+50%HU</td><td align="left">贴脸</td><td align="left">50%</td><td align="left">1:1</td><td align="left">否</td></tr>
+<tr><td align="left">半导体制冷器</td><td align="left"></td><td align="left">EU</td><td align="left">50%CU+50%HU</td><td align="left">贴脸</td><td align="left">50%</td><td align="left">1:1</td><td align="left">否</td></tr>
+</tbody></table>
+<h2 id="好像忘记说了点啥啊"><a class="header" href="#好像忘记说了点啥啊">好像忘记说了点啥啊。。。。</a></h2>
+<p>哦对，锅炉如果使用普通水会钙化（虽然挖掉会恢复），有不明证据显示可能导致爆炸，并且一定会导致输出下降，使用蒸馏水可以解决这些破事情。蒸汽引擎之类的会产生蒸馏水，干燥器也可以产生蒸馏水。燃烧室会产生一些产物，有些可能有点卵用，不及时清理会卡住。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="机器简介"><a class="header" href="#机器简介">机器简介</a></h1>
+<h5 id="能源危机10"><a class="header" href="#能源危机10">能源危机1.0</a></h5>
+<p>GT6与GT5很大的一个不同是大多数机器需要用非EU作为能源，而且空载不会自动停止。因此机器都需要一些能源转化的装置。同时GT6机器允许超压/降压工作，一般情况下一台机器允许最高比标准高一级和最低比标准低一级的能源输入。在超压/降压工作的情况下，GT6机器可以节约更多能源/允许超过标准限制的配方。<br />
+由于GT新版本机器不大喜欢吃电，可能得注意以下几点：</p>
+<ul>
+<li>各种口子的位置(由于机器不能改菊花了，仔细看看tooltips里写了啥)</li>
+<li>输出／输入口(不少机器喜欢直接往外输出(把产物丢出来)和简单粗暴的输入</li>
+<li>耗能(GT6你一组核电站都不够啊)</li>
+<li>处理方式(一堆矿物处理方式，错了哭死你)</li>
+<li>机器卡死(十有八九用了普通水)</li>
+<li>不知道怎么用(你需要看看NEI)</li>
+<li>手动机器记得准备食物(一堆盆子什么的都消耗饥饿)</li>
+<li>有些手动机器损耗很大</li>
+<li><strong>根据官方消息，机器升一级，低等级配方在高等级机器里的最低功率将会X4</strong></li>
+</ul>
+<h3 id="压缩机-compressor-消耗ku"><a class="header" href="#压缩机-compressor-消耗ku">压缩机 Compressor 消耗KU</a></h3>
+<p>把九个板、三个三重板、固态金属块或者金属板块压成压缩板，消耗KU，而蒸汽引擎的一大特点是启动需要先积累一定KU，会有不少损耗。</p>
+<h3 id="辊轧机-rolling-mill-消耗ru"><a class="header" href="#辊轧机-rolling-mill-消耗ru">辊轧机 Rolling Mill 消耗RU</a></h3>
+<p>功能上只能把固态金属块压成压缩板，但消耗RU，耗材还少点。蒸汽涡轮本身启动不需要积累RU。</p>
+<h3 id="破碎机-crusher-消耗ku"><a class="header" href="#破碎机-crusher-消耗ku">破碎机 Crusher 消耗KU</a></h3>
+<p>可以把挖下来的矿物破碎，比起锤子是双倍产出，还有副产物石粉。</p>
+<h3 id="离心机-centrifuge-消耗ru"><a class="header" href="#离心机-centrifuge-消耗ru">离心机 Centrifuge 消耗RU</a></h3>
+<p>请改变你关于离心机是核电专用设备的想法。初期你找不到石墨的话得用它离心灰烬出碳粉来炼钢铁。</p>
+<h3 id="磨粉机-shredder-消耗ru"><a class="header" href="#磨粉机-shredder-消耗ru">磨粉机 Shredder 消耗RU</a></h3>
+<p>可以把一堆东西都打成粉末。初期的很多东西都能用~~小钢磨~~研钵手动打粉，但玩到后面就不一样了。</p>
+<h3 id="筛荡机-sifter-消耗ku"><a class="header" href="#筛荡机-sifter-消耗ku">筛荡机 Sifter 消耗KU</a></h3>
+<p>自动筛子，没啥好说的，解放双手。而且要是官方以后进一步削弱了手动工具的出货率的话你就得好好造一个了。</p>
+<h3 id="洗矿机-sluice-消耗ru"><a class="header" href="#洗矿机-sluice-消耗ru">洗矿机 Sluice 消耗RU</a></h3>
+<p>把破碎机的产物洗干净，在官方未来削弱炼药锅洗矿前相对鸡肋。不过废水通过不同的工序可以处理得到不同的初期好东西。</p>
+<h3 id="圆锯-buzzsaw-消耗ru"><a class="header" href="#圆锯-buzzsaw-消耗ru">圆锯 Buzzsaw 消耗RU</a></h3>
+<p>把固态金属块锯成八个金属板+一个金属粉。需要消耗水、蒸馏水或者润滑油。润滑油能最小化能量与时间成本。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="特殊机器"><a class="header" href="#特殊机器">特殊机器</a></h1>
+<h5 id="不仅不科学不少还得要不锈钢"><a class="header" href="#不仅不科学不少还得要不锈钢">不仅~~不~~科学，不少还得要不锈钢？！</a></h5>
+<p>GT6有一些特殊的机器需要不锈钢，它们到后期依旧能用而且具有特殊功能（炸锅不锈钢，绝壁最屌）</p>
+<h3 id="蒸馏间-distillery-消耗hu"><a class="header" href="#蒸馏间-distillery-消耗hu">蒸馏间 Distillery 消耗HU</a></h3>
+<p>能把水蒸馏成蒸馏水（废话），当然也保留了制作药水的傳統藝能。</p>
+<p>不过干燥器Dryer已经干了蒸馏水的活，gg。</p>
+<h3 id="搅拌机-mixer-消耗ru"><a class="header" href="#搅拌机-mixer-消耗ru">搅拌机 Mixer 消耗RU</a></h3>
+<p>化工核心，需要不锈钢制作</p>
+<h3 id="燃烧反应室-burner-mixer-消耗ru需要点火使用"><a class="header" href="#燃烧反应室-burner-mixer-消耗ru需要点火使用">燃烧反应室 Burner Mixer 消耗RU，需要点火使用</a></h3>
+<p>就是一个要点火的搅拌机，可以处理一些要点火的化学反应</p>
+<h3 id="装罐机-canning-machine-消耗eu"><a class="header" href="#装罐机-canning-machine-消耗eu">装罐机 Canning Machine 消耗EU</a></h3>
+<p>虽然功能是装罐，但还能装电池和打火机，进电必备</p>
+<h3 id="高压瓮-autoclave-无消耗但总是需要蒸汽"><a class="header" href="#高压瓮-autoclave-无消耗但总是需要蒸汽">高压瓮 Autoclave 无消耗，但总是需要蒸汽</a></h3>
+<p>处理铝土矿，还能使部分宝石结晶！当然，获得的宝石品质都不高，而且钻石你就别想了。</p>
+<h3 id="凝结器-coagulator-耗时-曰-曰"><a class="header" href="#凝结器-coagulator-耗时-曰-曰">凝结器 Coagulator 耗时 曰. .曰</a></h3>
+<p>主要把乳胶凝结成橡胶粒，当然也能处理一些杂七杂八的东西。</p>
+<h3 id="浸洗室-bath-也耗时"><a class="header" href="#浸洗室-bath-也耗时">浸洗室 Bath 也耗时</a></h3>
+<p>能进行一些手动版浸洗盆做不了的东西。</p>
+<h3 id="注射器-injector-消耗eu"><a class="header" href="#注射器-injector-消耗eu">注射器 Injector 消耗EU</a></h3>
+<p>主要制作意义不明的碳酸饮品（没错），但是它还花了另外三百九十多页来解释它还能做一种看起来很好用的发光玻璃。</p>
+<h3 id="寒冷搅拌器-cryo-mixer-消耗cu"><a class="header" href="#寒冷搅拌器-cryo-mixer-消耗cu">寒冷搅拌器 Cryo Mixer 消耗CU</a></h3>
+<p>主要用来替代TE机器来制作凛冰粉末，但它还花了另外四十多页的NEI来做冷饮。你基本不用做着玩意。</p>
+<h3 id="冷冻器-freezer-消耗cu"><a class="header" href="#冷冻器-freezer-消耗cu">冷冻器 Freezer 消耗CU</a></h3>
+<p>看，又一个消耗CU的东西。兄弟，相信我，不要去做它，好吗？</p>
+<h3 id="通用转换器-generifier-耗时"><a class="header" href="#通用转换器-generifier-耗时">通用转换器 Generifier 耗时</a></h3>
+<p>把材料转换成通用材料，兼容用，似乎还能用来提供特殊便利?</p>
+<h3 id="印刷机-printer-消耗eu"><a class="header" href="#印刷机-printer-消耗eu">印刷机 Printer 消耗EU</a></h3>
+<p>做一个印刷机该干的事（我懒得写了）</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="化学工业"><a class="header" href="#化学工业">化学工业</a></h1>
+<p>对于那些一脸蒙蔽的格雷萌新，NEI也许并不足以解决他们的许多困难。在翻阅了半天NEI后他们可能还是不知道一些高级东西到底应该怎么搞，他们的科技树爬的十分艰难。</p>
+<h3 id="铬"><a class="header" href="#铬">铬</a></h3>
+<p>没有铬，你出不了不锈钢，搅拌机弄不了，整条化学线基本上都是锁死的。</p>
+<p><del>获得铬和不锈钢的最好方法当然是格雷地牢啦</del></p>
+<p>前期获得可以靠洗钙铬榴石、红宝石获得，产量一样；你也可以离心洗矿姬的废水来得到它，看脸。</p>
+<p>后期电解各种矿物，特别是铬铁矿和红宝石矿就有了，就是会耗时久一点</p>
+<h3 id="硫酸"><a class="header" href="#硫酸">硫酸</a></h3>
+<p>硫酸是重中之重，制造硫酸的三氧化硫主要有两条线来获取</p>
+<ol>
+<li>河流生态群系会刷黑沙，离心黑沙出五氧化二钒和磁铁矿粉。然后五氧化二钒跟二氧化硫反应出三氧化硫(五氧化二钒催化剂不消耗)，这条路线很便宜。铂也是可以替代五氧化二钒的。</li>
+<li>石膏（硫酸钙）与二氧化硅（燧石粉、玻璃粉之类）搅拌姬直接出三氧化硫。</li>
+</ol>
+<h3 id="盐酸"><a class="header" href="#盐酸">盐酸</a></h3>
+<p><del>有点咸，有点酸</del></p>
+<ol>
+<li>盐水、氧气、二氧化硫和盐反应，速度快，176t就是4000L盐酸，推荐。</li>
+<li>盐加硫酸，速度不慢。如果没怎么注意存氧气的话可以用这个。</li>
+<li>盐、石盐、盐水电解，耗能和速度一致，256秒x16GU/t产出1000L氯气，加水得盐酸，不是很推荐。</li>
+<li>海水电解，不推荐还很慢，4096秒1000L氯气。</li>
+</ol>
+<h3 id="氢氟酸"><a class="header" href="#氢氟酸">氢氟酸</a></h3>
+<p>也有不止一条路线</p>
+<ol>
+<li>洗不少矿，特别是磷灰石矿会出氟化钙矿。氟化钙跟硫酸搅拌机反应就行。需要机器功率很低，很棒。</li>
+<li>电解其它各种矿物、宝石，不推荐，耗时和耗能都挺大。</li>
+</ol>
+<h3 id="铝"><a class="header" href="#铝">铝</a></h3>
+<p>首先是二氧化三铝的获取，可以通过电解部分宝石、石头直接获取，也可以处理铝土矿获得</p>
+<ol>
+<li>各种蓝宝石、红宝石和红花岗岩可以直接处理出氧化铝。其它宝石耗能太大不推荐。</li>
+<li>铝土矿粉末加上氢氧化钠/氢氧化钾在高压瓮反应得到对应的产物，产物在浸洗机里和水反应得到氢氧化铝。氢氧化铝下锅得到氧化铝</li>
+</ol>
+<p>氧化铝和其它一些需要氢氟酸得到的奇怪的东西在电解机里电解出铝。</p>
+<h3 id="钛"><a class="header" href="#钛">钛</a></h3>
+<p>二氧化钛或者钛铁矿粉末和含碳粉加上液态的碳酸钙和氯气，在燃烧反应室得到腐蚀性的@四氯化钛 ，然后在浸洗盆里（手动的就行）加上钠或者镁得到镁粉。</p>
+<h3 id="钨"><a class="header" href="#钨">钨</a></h3>
+<p>首先得到三氧化钨</p>
+<ol>
+<li>氯钨铅矿丢坩埚</li>
+<li>白钨矿、钨锰铁矿或者钨铁矿和氯气在浸洗器反应得到钨酸，钨酸丢坩埚（防腐蚀）凉了抠出来或者干燥器处理得到三氧化钨</li>
+<li>离心末地石出，这需要耐心和欧</li>
+</ol>
+<p>三氧化钨与氢气搅拌出钨粉。</p>
+<h3 id="硅"><a class="header" href="#硅">硅</a></h3>
+<p>这玩意可以锁死你的电力科技。应该电解硅酸钙，别的太耗电了。硅酸钙又正好是制取硫酸的产物，就很方便。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="坩埚进阶"><a class="header" href="#坩埚进阶">坩埚进阶</a></h1>
+<p>我觉得你最好把最基础的生产工具提升上去</p>
+<p>坩埚是伴随玩家从开局到毕业的一个充满特色的机器。我们来重温一下坩埚的几个要点和骚操作：</p>
+<ul>
+<li>会造成烫伤伤害</li>
+<li>锅内东西汽化会对周围造成高额伤害</li>
+<li>锅本身液化也会造成巨额伤害</li>
+<li>不能处理酸的坩埚遇到腐蚀性物质会凭空消失，留下嘶～的一声</li>
+<li>手持桶、烧杯、玻璃瓶等容器可以在锅的温度不超过容器熔点的情况下右键吧锅里的液体舀出来。当然锅里的东西有腐蚀性的话容器也得防腐蚀</li>
+<li>一次性投入的物品如果总量超过锅的容量，锅会把尝试把多出来的储存到自己的另一个空间里，并且在锅有空间的时候把这个空间里的东西塞回锅里</li>
+<li>锅里无法导出的物品可以在凉下来后徒手扣出来，当然烫得时候也行，只要你不怕死</li>
+<li>浇筑口可以把锅的液体导出到它正下方的浇筑盆、浸洗盆里</li>
+</ul>
+<p>这样一来坩埚成功成为新手的一大杀手。因此，接下来会对坩埚的（半）自动控制和升级进行讲解。</p>
+<h3 id="自动控制"><a class="header" href="#自动控制">自动控制</a></h3>
+<p>首先，要对坩埚当前的温度进行监控，并在合适温度使燃烧室停机。这就需要使用温度传感器和活塞了。</p>
+<p>如果坩埚只是能控制温度，根本称不上自动化。通过对坩埚的输出和输入进行一定的配置，就能在原版做到一定的自动化了。</p>
+<p>当然，假如你还装了AE或者电脑类模组的话，就能做到更高程度的自动化了。<del>只要会原版红石什么自动做不出？</del></p>
+<h3 id="坩埚升级"><a class="header" href="#坩埚升级">坩埚升级</a></h3>
+<p>当然，随着需要处理的金属的熔点变高，陶瓷坩埚显得有些不够用了，这时候就要对坩埚进行升级。坩埚升级主要有两条路线：铱线和铌钛线。当然，模具也要跟着升级，否则就好玩了。</p>
+<ul>
+<li>铱线：陶瓷-&gt;铬-&gt;铱-&gt;钽/锇-&gt;钨</li>
+<li>铌钛线：陶瓷-&gt;铌钛-&gt;铌-&gt;钽/锇-&gt;钨</li>
+</ul>
+<p>值得注意的是铱的熔点跟铬锅的熔点相近，小心操作。另外钽可以从金红石里面提取，所以做铌钛和铌坩埚的时候就能顺便出钽了</p>
+<p>铌钛合金做的时候铌并不会融化，但也能做出合金。你怎么不问问为啥做钢的时候碳不融化？</p>
+<p>不管怎么样，铬、铱和钨的坩埚都最好做出来。铬能处理腐蚀性东西，铱和钨能合成机器。</p>
+<p>另外坩埚自身的重量也会影响加热。所以在处理普通金属的时候还是尽量用效率高的陶瓷坩埚。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="覆盖板简介"><a class="header" href="#覆盖板简介">覆盖板简介</a></h1>
+<h5 id="论如何遮挡住各种面"><a class="header" href="#论如何遮挡住各种面">论如何遮挡住各种面</a></h5>
+<p>GT6的大多数机器/其他什么东西都没有多少GUI（可能是GT作者偷懒），而且机器日常就是老抽筋。但是好消息是GT6绝大多数的机器允许使用面板，面板与覆盖板不同，它是独立的。有些时候也可以用于其他用途。所有面板都具有红石信号相关功能，通过螺丝刀和表面上的按钮可以~~搞事情~~更改设置。别问我为啥有些覆盖板叫面板，这是我手残取出来的破名字，太蛋疼了。
+贴在管道上的非纸覆盖版可以防止被其中液体烫伤。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="覆盖板简介-1"><a class="header" href="#覆盖板简介-1">覆盖板简介</a></h1>
+<h5 id="总是被人忘记的东西之一虽然在gt6似乎开始变重要了"><a class="header" href="#总是被人忘记的东西之一虽然在gt6似乎开始变重要了">总是被人忘记的东西之一，虽然在GT6似乎开始变重要了</a></h5>
+<p>覆盖板是一种只能贴在机器上的物品(item)，它不能和面板(block)一样单独使用。同时它不作为一块单独方块。这堆东西都其实还挺有用的，有些虽然显示不出什么玩意儿，但是对于GT6机器自动化和节能都有极其重要的作用。覆盖板覆盖部分无法贴电线什么的。（被盖住了，可科学啦～）有些覆盖板还支持放在管道上。金属板和箔，以及机械臂传送带什么的也可以当覆盖板。
+通过在tooltips里写的方法可以改设置。</p>
+<h3 id="ps剪切工具修改设置什么的到底是啥啊我估计我手残了在这里mark一下记得某天修"><a class="header" href="#ps剪切工具修改设置什么的到底是啥啊我估计我手残了在这里mark一下记得某天修">PS：剪切工具修改设置什么的到底是啥啊，我估计我手残了，在这里mark一下记得某天修</a></h3>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="生产线组合"><a class="header" href="#生产线组合">生产线组合</a></h1>
+<h5 id="如何在不需要的时候把产能和耗能同时自动停止"><a class="header" href="#如何在不需要的时候把产能和耗能同时自动停止">如何在不需要的时候把产能和耗能同时自动停止</a></h5>
+<p>把GT机器组合在一起，就是生产线辣。把一堆机器聚集起来一起启动关机还能节约不少能源~~~翻车集体爆炸~~~，同时可以提高效率。因为生产线各种机器的产率不同你可能得需要一些红石比较器和箱子作为缓冲和在箱子里所有东西处理完的时候让机器知道不能继续嗨了。这是最基础的节能方法，虽然可能很不靠谱而且很可能做起来很麻烦。偷个懒直接放几个箱子在几个机器之间作为缓冲然后手动关机吧，我知道你们很懒（而且下届石英很坑爹）。</p>
+<p>因为某些矿物处理很麻烦，推荐生产线只粉碎，清洗，再次研磨。后续处理作为单独的，或者通过一些简单红石控制（拉杆）来切换输出位置（GT机器的输出位置无法更改，但是你总会关闭／打开机器的输入口的方法吧，或者说换一下用扳手漏斗朝向也可以啊。）
+在这里应该提醒一下：能源单位需要很多，生产线需要自己研究下最节能的方案（GT机器油老虎+产能爆强，动不动boomshakalaka）</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="电力时代"><a class="header" href="#电力时代">电力时代</a></h1>
+<h5 id="高耗能与简便的使用方式"><a class="header" href="#高耗能与简便的使用方式">高耗能与简便的使用方式</a></h5>
+<h3 id="警告在提前进入电力时代的话你会变成一名脸黑如非的煤矿工到处寻找岩浆和石油的人肉泵"><a class="header" href="#警告在提前进入电力时代的话你会变成一名脸黑如非的煤矿工到处寻找岩浆和石油的人肉泵">⚠️警告⚠️！在提前进入电力时代的话你会变成一名脸黑如非的煤矿工／到处寻找岩浆和石油的人肉泵。</a></h3>
+<h4 id="注意你玩的一台电解机可不算什么电力时代电力时代指完全进入用电"><a class="header" href="#注意你玩的一台电解机可不算什么电力时代电力时代指完全进入用电">注意，你玩的一台电解机可不算什么电力时代，电力时代指完全进入用电。</a></h4>
+<p>没错，GT6各种能转电力和电力转各种能都是有损耗的，没事不要作死玩电力。（虽然说进入电力时代很便宜。电力时代只有在以下条件满足的情况下才可以进入</p>
+<ol>
+<li>有足够能源，比如说足够的做太阳能的材料，大量煤矿，自动化林场，焦炉阵列，液体泉，地狱岩浆泵等</li>
+<li>有足够资源进行电力化（你电力化一半什么意思，反而复杂）</li>
+<li>对于储能问题进行预先计划</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="正确用电"><a class="header" href="#正确用电">正确用电</a></h1>
+<h5 id="大家都知道换灯泡要断电但是多少人记得关电闸"><a class="header" href="#大家都知道换灯泡要断电但是多少人记得关电闸">大家都知道换灯泡要断电，但是多少人记得关电闸？</a></h5>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="动态节能技术"><a class="header" href="#动态节能技术">动态节能技术</a></h1>
+<h5 id="你需要一点脑洞和大量的实践来理解这些"><a class="header" href="#你需要一点脑洞和大量的实践来理解这些">你需要一点脑洞和大量的实践来理解这些</a></h5>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="大型设备-蒸馏塔"><a class="header" href="#大型设备-蒸馏塔">大型设备-蒸馏塔</a></h1>
+<h5 id="建这么大一个怎么看都别扭"><a class="header" href="#建这么大一个怎么看都别扭">建这么大一个怎么看都别扭</a></h5>
+<p>你可以蒸馏石油，获得各种产出。丁烷可以充打火机，润滑油可以给圆锯之类的提高效率。沥青可以加快行走速度……</p>
+<p>当然最重要的是塑料粉末，是做电路板的重要材料。</p>
+<p>由于6.07时代的地质聚变，你可以通过把油母页岩岩层丢焦炉里烧来弄油。当然灵魂沙/灵魂蜂巢炼油是非酋传统项目。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="附录"><a class="header" href="#附录">附录</a></h1>
+<h5 id="那些我不大想在前面说的破玩意"><a class="header" href="#那些我不大想在前面说的破玩意">那些我不大想在前面说的破玩意</a></h5>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="岩层与矿物"><a class="header" href="#岩层与矿物">岩层与矿物</a></h1>
+<p>我是禄存，这部分以后会在这里更新哦</p>
+<p>感谢IC论坛（industrial-craft.net）的exylic提供<a href="https://forum.industrial-craft.net/thread/7156-gregtech-6-1-7-10-website-patreon-info-support-and-suggestions/?postID=212564#post212564">大部分信息</a></p>
+<p>@=at，表示这些位置有该矿物，但只有这些位置才有该矿物</p>
+<p>深刻怀疑是不是岩层直接决定矿物，而不是岩层先决定矿脉再决定矿物</p>
+<p>矿物丰度不确定，也就是矿物是否是小矿形式出现和矿物的密度都可能是随机的</p>
+<p>无烟煤（原版煤炭）、褐煤、铝土、盐、石盐、油母页岩会作为一整个岩层生成</p>
+<p>不写出不代表不存在，样本数量可能会不足，希望大家提出自己的信息数据</p>
+<p>善用Ctrl+F搜索</p>
+<h2 id="岩层中的矿物"><a class="header" href="#岩层中的矿物">岩层中的矿物</a></h2>
+<h4 id="stone----石头"><a class="header" href="#stone----石头">Stone    石头</a></h4>
+<ul>
+<li>Hematite    赤铁矿</li>
+<li>Teslatite    蓝石矿</li>
+<li>Stibnite    辉锑矿</li>
+</ul>
+<h4 id="green-schist----绿片岩"><a class="header" href="#green-schist----绿片岩">Green Schist    绿片岩</a></h4>
+<ul>
+<li>Andradite    钙铁榴石矿</li>
+<li>Almandine    铁铝榴石矿</li>
+</ul>
+<h4 id="blue-schist----蓝色片岩"><a class="header" href="#blue-schist----蓝色片岩">Blue Schist    蓝色片岩</a></h4>
+<ul>
+<li>Spessartine    锰铝榴石矿</li>
+<li>Pyrope    镁铝榴石矿</li>
+</ul>
+<h4 id="red-granite----红色花岗岩"><a class="header" href="#red-granite----红色花岗岩">Red Granite    红色花岗岩</a></h4>
+<ul>
+<li>Tantalite    钽铁矿</li>
+<li>Uraninite    晶质铀矿    @12,5</li>
+<li>Pitchblende    沥青铀矿    @12,5</li>
+</ul>
+<h4 id="black-granite----黑色花岗岩"><a class="header" href="#black-granite----黑色花岗岩">Black Granite    黑色花岗岩</a></h4>
+<ul>
+<li>Grossular    钙铝榴石矿</li>
+<li>Olivine    橄榄石矿</li>
+<li>Pyrolusite    软锰矿</li>
+<li>Bastnasite    氟碳铈矿</li>
+<li>Bixbite    红绿柱石矿</li>
+<li>Sheldonite    硫砷铂矿    @5</li>
+<li>Sperrylite    砷铂矿    @5</li>
+<li>Emerald    绿宝石    @40,ExtremeHills</li>
+</ul>
+<h4 id="basalt----玄武岩"><a class="header" href="#basalt----玄武岩">Basalt    玄武岩</a></h4>
+<ul>
+<li>Uvarovite    钙铬榴石矿    @ExtremeHills</li>
+<li>Chromite    铬铁矿    @59,40,64</li>
+<li>Grossular    钙铝榴石矿    @ExtremeHills</li>
+<li>Pyrolusite    软锰矿</li>
+<li>Ilmenite    钛铁矿</li>
+<li>Rutile    金红石矿</li>
+<li>Spodumene    锂辉矿    @59</li>
+<li>Lepidolite    锂云母矿</li>
+<li>Olivine    橄榄石矿</li>
+</ul>
+<h4 id="andesite----安山岩"><a class="header" href="#andesite----安山岩">Andesite    安山岩</a></h4>
+<ul>
+<li>Gold    金矿</li>
+<li>Bromargyrite<a href="https://www.gitbook.com/book/indoorsnb/gregtech6_chinese_guide/details">    </a>溴银矿    @15</li>
+</ul>
+<h4 id="diorite----闪长岩"><a class="header" href="#diorite----闪长岩">Diorite    闪长岩</a></h4>
+<ul>
+<li>Cobaltite    辉砷钴矿</li>
+<li>Garnierite    硅镁镍矿</li>
+<li>Pentlandite    镍黄铁</li>
+</ul>
+<h4 id="granite18-vanilla----花岗岩18原版"><a class="header" href="#granite18-vanilla----花岗岩18原版">Granite(1.8 Vanilla)    花岗岩（1.8原版）</a></h4>
+<ul>
+<li>Apatite    磷灰石矿    @15,35,60</li>
+<li>Phosphorite    磷灰石矿</li>
+<li>Phosphate    磷酸盐矿    @35</li>
+</ul>
+<h4 id="marble----大理石"><a class="header" href="#marble----大理石">Marble    大理石</a></h4>
+<ul>
+<li>Sphalerite    闪锌矿    @5</li>
+<li>Pyrite\(displayed as Gold ore\)</li>
+<li>Chalcopyrite    黄铜矿 @5</li>
+<li>Kesterite    锌黄锡矿</li>
+<li>Casseterite    锡石矿</li>
+<li>Stannite    黄锡矿</li>
+<li>Pyrite    黄铁矿 @5</li>
+</ul>
+<h4 id="kimberlite----金伯利岩"><a class="header" href="#kimberlite----金伯利岩">Kimberlite    金伯利岩</a></h4>
+<ul>
+<li>Diamond    钻石矿    @5</li>
+<li>Green Sappire @ExtremeHills</li>
+<li>Spinel @ExtremeHills</li>
+</ul>
+<h4 id="komatiite----科马提岩"><a class="header" href="#komatiite----科马提岩">Komatiite    科马提岩</a></h4>
+<ul>
+<li>Redstone    红石矿    @27,5</li>
+<li>Cinnabar    朱砂矿</li>
+<li>Magnesite    菱镁矿</li>
+<li>Pyrite\(displayed as Gold ore\)    黄铁矿（英文是“金矿”）</li>
+<li>Cassiterite    锡石矿</li>
+</ul>
+<h4 id="quartzite----石英岩"><a class="header" href="#quartzite----石英岩">Quartzite    石英岩</a></h4>
+<ul>
+<li>Certus Quartz    赛特斯石英矿</li>
+<li>Barite    重晶石矿</li>
+</ul>
+<h4 id="limestone----石灰石"><a class="header" href="#limestone----石灰石">LimeStone    石灰石</a></h4>
+<ul>
+<li>Arsenopyrite    砷黄铁矿 @5</li>
+<li>Stibnite    辉锑矿</li>
+<li>Galena    方铅矿 @5</li>
+<li>Powelleite</li>
+<li>Malachite    孔雀石矿</li>
+<li>Brown Limonite    褐铁矿</li>
+<li>Yellow Limonite    黄色褐铁矿</li>
+<li>Molybdenite    钼矿</li>
+<li>Tetrahedrite    黝铜矿</li>
+<li>Copper    铜矿</li>
+<li>Pyrite    黄铁矿 @29,5</li>
+<li>Huebnerite    钨锰矿 @5</li>
+<li>Wolframite    钨锰铁矿 @5</li>
+<li>Ferberite    钨铁矿 @5</li>
+<li>Scheelite    白钨矿 @5</li>
+</ul>
+<h2 id="两种岩层之间的矿物一般沿着交界处分布"><a class="header" href="#两种岩层之间的矿物一般沿着交界处分布">两种岩层之间的矿物（一般沿着交界处分布）</a></h2>
+<ul>
+<li>Sodalite + Lazurite(Little) + Lapis + Pyrite(Little): Black Granite &amp; Marble</li>
+<li>方钠石矿+天青石（少）+青金石+黄铁矿（少）：黑花岗岩和大理石</li>
+<li>Diamond: Granite &amp; Basalt</li>
+<li>钻石：花岗岩和玄武岩</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="矿物生成列表"><a class="header" href="#矿物生成列表">矿物生成列表</a></h1>
+<table><thead><tr><th align="left">矿脉名</th><th align="left">最小高度</th><th align="left">最大高度</th><th align="left">随机权重</th><th align="left">生成世界</th><th align="left">顶部矿物</th><th align="left">中间矿物</th><th align="left">底部矿物</th><th align="left">分散矿物</th></tr></thead><tbody>
+<tr><td align="left">褐煤</td><td align="left">50</td><td align="left">130</td><td align="left">160</td><td align="left">主世界</td><td align="left">褐煤</td><td align="left">褐煤</td><td align="left">褐煤</td><td align="left">煤炭</td></tr>
+<tr><td align="left">煤炭</td><td align="left">50</td><td align="left">80</td><td align="left">80</td><td align="left">主世界</td><td align="left">煤炭</td><td align="left">煤炭</td><td align="left">煤炭</td><td align="left">褐煤</td></tr>
+<tr><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td></tr>
+<tr><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td><td align="left"></td></tr>
+</tbody></table>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="坩埚周边熔点列表"><a class="header" href="#坩埚周边熔点列表">坩埚周边熔点列表</a></h1>
+<p>坩埚等方块具有承受温度极限，它们比材料熔点高一些。如果流体温度太高，可能会损坏坩埚/其他方块(炸死人哦)。</p>
+<table><thead><tr><th align="left">材料</th><th align="left">熔点(K)</th><th align="left">材料</th><th align="left">熔点(K)</th></tr></thead><tbody>
+<tr><td align="left">石头</td><td align="left">1375</td><td align="left">玄武岩</td><td align="left">2091</td></tr>
+<tr><td align="left">黑色花岗岩</td><td align="left">1875</td><td align="left">红色花岗岩</td><td align="left">1875</td></tr>
+<tr><td align="left">地狱砖</td><td align="left">2250</td><td align="left">陶瓷</td><td align="left">2500</td></tr>
+<tr><td align="left">碳</td><td align="left">4750</td><td align="left">青铜</td><td align="left">1696</td></tr>
+<tr><td align="left">因瓦合金</td><td align="left">2395</td><td align="left">钢</td><td align="left">2557</td></tr>
+<tr><td align="left">陨铁</td><td align="left">2513</td><td align="left">不锈钢</td><td align="left">2428</td></tr>
+<tr><td align="left">陨钢</td><td align="left">2807</td><td align="left">钛</td><td align="left">2426</td></tr>
+<tr><td align="left">铬</td><td align="left">2725</td><td align="left">钼</td><td align="left">3620</td></tr>
+<tr><td align="left">铌</td><td align="left">3437</td><td align="left">钽</td><td align="left">4112</td></tr>
+<tr><td align="left">锇</td><td align="left">4132</td><td align="left">铱</td><td align="left">3398</td></tr>
+<tr><td align="left">铌钛合金</td><td align="left">2931</td><td align="left">钒</td><td align="left">2728</td></tr>
+<tr><td align="left">钨</td><td align="left">4618</td><td align="left">艾德曼合金</td><td align="left">6781</td></tr>
+</tbody></table>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+                        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+                
+    </body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>自然生成 - 格雷科技6u中文指南</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="格雷科技6(GT6)模组的中文指南">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../favicon.svg">
+                        <link rel="shortcut icon" href="../favicon.png">
+                <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+                <link rel="stylesheet" href="../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 引言</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1.html"><strong aria-hidden="true">2.</strong> 初阶-了解世界</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter1/chapter1-12.html"><strong aria-hidden="true">2.1.</strong> 正确阅读 Tooltips</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-1.html"><strong aria-hidden="true">2.2.</strong> 格雷工具</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-2.html" class="active"><strong aria-hidden="true">2.3.</strong> 自然生成</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-3.html"><strong aria-hidden="true">2.4.</strong> 格雷地下避难所</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-5.html"><strong aria-hidden="true">2.5.</strong> 简易矿物处理</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-4.html"><strong aria-hidden="true">2.6.</strong> 单位</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-13.html"><strong aria-hidden="true">2.7.</strong> 手动机器</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-6.html"><strong aria-hidden="true">2.8.</strong> 基础熔炼</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-7.html"><strong aria-hidden="true">2.9.</strong> 点火工具</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-8.html"><strong aria-hidden="true">2.10.</strong> 多方块-焦炉</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-9.html"><strong aria-hidden="true">2.11.</strong> 化合物处理</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-10.html"><strong aria-hidden="true">2.12.</strong> 合金制作</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-14.html"><strong aria-hidden="true">2.13.</strong> GT-Forestry</a></li><li class="chapter-item expanded "><a href="../chapter1/chapter1-11.html"><strong aria-hidden="true">2.14.</strong> GT式休闲</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter2/chapter2.html"><strong aria-hidden="true">3.</strong> 中阶-机器与自动化</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter2/chapter2-1.html"><strong aria-hidden="true">3.1.</strong> 产能设备简介</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-2.html"><strong aria-hidden="true">3.2.</strong> 机器简介</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-11.html"><strong aria-hidden="true">3.3.</strong> 特殊机器</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-12.html"><strong aria-hidden="true">3.4.</strong> 化学工业</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-13.html"><strong aria-hidden="true">3.5.</strong> 坩埚进阶</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-3.html"><strong aria-hidden="true">3.6.</strong> 面板筒介</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-5.html"><strong aria-hidden="true">3.7.</strong> 覆盖板简介</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-6.html"><strong aria-hidden="true">3.8.</strong> 生产线组合</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-7.html"><strong aria-hidden="true">3.9.</strong> 电力时代</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-8.html"><strong aria-hidden="true">3.10.</strong> 正确用电</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-9.html"><strong aria-hidden="true">3.11.</strong> 动态节能技术改造</a></li><li class="chapter-item expanded "><a href="../chapter2/chapter2-10.html"><strong aria-hidden="true">3.12.</strong> 大型设备-蒸馏塔</a></li></ol></li><li class="chapter-item expanded "><a href="../addition/addition.html"><strong aria-hidden="true">4.</strong> 附录</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../addition/addition-1.html"><strong aria-hidden="true">4.1.</strong> 存储-流体</a></li><li class="chapter-item expanded "><a href="../addition/addition-2.html"><strong aria-hidden="true">4.2.</strong> 存储-物品</a></li><li class="chapter-item expanded "><a href="../addition/addition-3.html"><strong aria-hidden="true">4.3.</strong> 管道-流体</a></li><li class="chapter-item expanded "><a href="../addition/addition-4.html"><strong aria-hidden="true">4.4.</strong> 管道-物品</a></li><li class="chapter-item expanded "><a href="../addition/addition-5.html"><strong aria-hidden="true">4.5.</strong> 多方块-存储</a></li><li class="chapter-item expanded "><a href="../addition/addition-10.html"><strong aria-hidden="true">4.6.</strong> 岩层与矿物</a></li><li class="chapter-item expanded "><a href="../addition/addition-8.html"><strong aria-hidden="true">4.7.</strong> 矿物生成列表</a></li><li class="chapter-item expanded "><a href="../addition/addition-9.html"><strong aria-hidden="true">4.8.</strong> 坩埚周边熔点列表</a></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">格雷科技6u中文指南</h1>
+
+                    <div class="right-buttons">
+                                                <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="自然生成"><a class="header" href="#自然生成">自然生成</a></h1>
+<h2 id="一如既往的玄学"><a class="header" href="#一如既往的玄学">一如既往的玄学</a></h2>
+<p>gt6不只是生成矿物，还生成了一堆各种奇葩的东西。比如说树啊，GT避难所啊什么的。</p>
+<h2 id="岩层生成"><a class="header" href="#岩层生成">岩层生成</a></h2>
+<p><img src="/assets/%E5%B2%A9%E5%B1%82.png" alt="岩层" /></p>
+<p>gt6在6.07以后主世界采用了更加神秘的岩层机制！岩层一览如下</p>
+<ul>
+<li>红色/黑色花岗岩:硬度最高，同时具有抗爆性能</li>
+<li>玄武岩:硬度比石头高</li>
+<li>大理石:和石头一样硬度</li>
+<li>石灰石:碳酸钙什么的</li>
+<li>蓝/绿片岩:花花绿绿的东西</li>
+<li>花岗岩(白)/闪长岩/安山岩:它们穿越时空，从遥远的1.8版本到来</li>
+<li>金伯利岩:听名字就知道产钻石</li>
+<li>石英岩:不多说，产石英，包括AE的</li>
+</ul>
+<p>岩层中会随机生成一点矿物，矿物有以下三种生成：</p>
+<ul>
+<li>在岩层中生成，基本上都是这样</li>
+<li>在两种岩层的夹缝生成，例如青金石、方钠石等在黑色花岗岩跟大理石的夹缝处有生成</li>
+</ul>
+<p><img src="/assets/%E5%A4%B9%E7%BC%9D%E7%9F%BF%E7%89%A9.png" alt="夹缝矿物" /></p>
+<ul>
+<li>作为一个单独的岩层生成，例如无烟煤（就是煤炭）、褐煤、油母页岩、铝土矿以及盐和石盐</li>
+</ul>
+<p><img src="/assets/%E7%85%A4%E7%9F%BF%E5%B1%82.png" alt="煤矿层" /></p>
+<h3 id="详细数据参见附录-a-hrefadditionaddition-10html岩层与矿物a"><a class="header" href="#详细数据参见附录-a-hrefadditionaddition-10html岩层与矿物a">详细数据参见附录 <a href="/addition/addition-10.html">岩层与矿物</a></a></h3>
+<p>谁也不知道到底还有没有矿脉这种概念。总之你可以通过捡起地上的石头来查询这条y轴上到底有点啥</p>
+<h2 id="矿物生成注意gt607以后版本仅适用于非主世界维度"><a class="header" href="#矿物生成注意gt607以后版本仅适用于非主世界维度">矿物生成（<strong>注意！GT6.07以后版本仅适用于非主世界维度</strong>）</a></h2>
+<p>格雷科技6加入了矿脉形式的矿物生成，与GT作者前作格雷科技5不同的是格雷科技6的矿脉生成算法变化，它具有以下</p>
+<h3 id="特性"><a class="header" href="#特性">特性</a></h3>
+<ul>
+<li>大小不固定</li>
+<li>密集度不固定</li>
+<li>矿脉可以和其他矿脉交叉混合</li>
+<li>当安装了其他mod并且重新生成gregtech6全部配置文件后，它可能生成一些其他mod的矿石，例如三钛或rockhounding里大量的各类宝石。这也带来了一些问题（比如说有些加入了太多矿导致部分重要矿物很难找到）</li>
+<li>不同地形具有不同的矿脉生成，比如说海底多铀。
+每个矿脉具有2-4种矿物（尚不明确）矿物多为化合类矿产，需要格雷科技的机械设备和坩埚进行处理。</li>
+<li>不同地形／世界具有不同的贫瘠矿物</li>
+</ul>
+<h3 id="矿脉生成列表请见附录第八篇-a-hrefadditionaddition-8html矿物生成列表a"><a class="header" href="#矿脉生成列表请见附录第八篇-a-hrefadditionaddition-8html矿物生成列表a">矿脉生成列表请见附录第八篇 <a href="addition/addition-8.html">矿物生成列表</a></a></h3>
+<h4 id="沙漠中地表矿脉图"><a class="header" href="#沙漠中地表矿脉图">沙漠中地表矿脉图</a></h4>
+<p>我们来看看地表矿物等生成，这张处理过的图的高度为64(地表)不能显示地下有没有矿。<br />
+<img src="/assets/%E7%9F%BF%E8%84%89%E9%AB%98%E6%B8%85.png" alt="矿脉" /><br />
+由此可见GT6矿脉生成大小等都发生了变化，3x3挖矿法不好用了呢。</p>
+<p>獠牙：~~谁说的不好用了，照样用啊，是你脑图像处理能力不行吧!~~让我来带大家看看怎么找矿脉基点（简单方式）。</p>
+<p><img src="/assets/%E5%AF%BB%E6%89%BE%E7%9F%BF%E8%84%89-1.png" alt="寻找矿脉" /></p>
+<p>首先我们看到这里，明显的有三大矿脉对吧，而且由于GT6中矿脉密集度不固定且可以和其他矿脉交叉混合，所以出现了这里混杂不好确定基点的情况：红色方框的矿脉把其他两种矿脉的位置给侵占了，但是我们处理下会发现其实还是很简单的。</p>
+<p><img src="/assets/%E5%AF%BB%E6%89%BE%E7%9F%BF%E8%84%89-2.png" alt="寻找矿脉" /></p>
+<p>我们要做的事把矿脉的蔓延部分，重合部分以及不足部分去除或补全，这样一来矿脉中心点便可清楚地显示出来了（图中用点标识出的区块）。</p>
+<p>下面我们来看看复杂一点的地方,比如这里：</p>
+<p><img src="/assets/%E5%AF%BB%E6%89%BE%E7%9F%BF%E8%84%89-4.png" alt="寻找矿脉" /></p>
+<p>由此可见：找矿脉还是可以用3*3大法，但是矿脉的清场方式变得有点困难了，首先矿脉的边缘密度降低，边界之外仍然能有生成，边界之内也有可能不生成，所以建议随心处理，把看到的挖光就行了，边上密度小懒得挖也是可以的。</p>
+<h2 id="基岩矿脉"><a class="header" href="#基岩矿脉">基岩矿脉</a></h2>
+<p><del>作者良心发现，终于弄出来了好找的一种矿物生成方式</del></p>
+<p>这种矿脉贴近基岩生成。如果地表是沙子、泥土、草地之类的话就会刷出一些gt6特有的花来指示基岩矿脉。基岩矿脉是两个底面一正一反扣在一起的四楞台。最底层中心会有基岩矿生成。基岩矿不能挖掘，但可以用基岩钻头通过消耗大量物资从里面无限制造矿。</p>
+<h2 id="石油生成"><a class="header" href="#石油生成">石油生成</a></h2>
+<p>石油在gt6以水池的方式生成在靠近基岩的地方。大家可以通过<a href="http://www.mcmod.cn/post/517.html">这里</a>介绍的螺旋挖矿法来找到它。如果石油池子的生成涉及到基岩，还会生成油泉。油泉不可挖掘，每过一段时间就会在正上方生成一个液体方块。</p>
+<p>另外还会通过同样方式生成岩浆和水的池子，同样可能生成对应的岩浆泉/水泉。</p>
+<h2 id="地牢生成"><a class="header" href="#地牢生成">地牢生成</a></h2>
+<p>除了gt矿物生成外，GT6还添加了其他的生成。分别为枫树和橡胶树(GT)，格雷地下避难所，海水，地牢箱子生成。</p>
+<h2 id="树木生成"><a class="header" href="#树木生成">树木生成</a></h2>
+<p>现在GT6生成的树有六种：橡胶树，枫树（枫树mod表示不服），榛树，彩虹树（基佬树），柳树，高红槿。 因为我比较懒所以懒得去一个个找出来图了，反正就是一堆奇葩的树就对了。<br />
+<del>根据不明消息，GT6的树木生成方式似乎利用了地牢生成方式</del></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../chapter1/chapter1-1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../chapter1/chapter1-3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../chapter1/chapter1-1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../chapter1/chapter1-3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>
